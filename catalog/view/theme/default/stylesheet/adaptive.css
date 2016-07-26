@@ -1,0 +1,117 @@
+/*
+@media screen and (max-height: 600px) {
+    .hide{
+        display: none !important;
+    }
+
+}
+
+@media screen and (max-width: 1360px){
+    
+    .header-address{
+        width: 25% !important;
+    }
+    
+    .option, .price{
+        width: 50% !important;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .showcase{
+        width: 700px !important;
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+    
+    .hide{
+        display: none !important;
+    }
+    
+    
+    body{
+        padding: 5px;
+    }
+    
+    .showcase{
+        width: 400px !important;
+    }
+    
+    .header-address, .option, .price{
+        width: 100% !important;
+    }
+	
+	.header-logo--kapriz{
+	margin-left: 25% !important;
+	margin-right: 25% !important;
+	}
+      
+}
+
+@media screen and (max-width: 500px) {
+    .footer-text, .footer-GI{
+        width: 100% !important;
+    }
+	
+	.footer-logo{
+		margin-left: 35% !important;
+	}
+	
+	.header-address{
+		text-align: center;
+	}
+  
+    
+} */
+
+
+@media (max-width: 1000px) {
+    .spoiler-square, .spoiler-square-2{
+        display: none !important;
+    }
+}
+
+
+@media (max-width: 810px) {
+    .m-toptel {
+        margin: 10px 25px auto;
+        float: none;
+    }
+    /*
+    .slider-size{
+        width: 80% !important;
+    }*/
+    
+    .swiper-button-next, .swiper-button-prev{
+            top: 60% !important;
+            width: 20px !important;
+            height: 20px !important;
+    }
+    
+    .swiper-container {
+            width: 75% !important;
+    }
+    
+    
+    .swiper-border{
+        position: absolute;
+        top: 5%;
+        left: 15% !important;
+        border:3px solid #DB4D7D;
+        width: 74% !important;
+        height: 90%;
+    }
+    
+}
+
+ @media (max-width: 450px) {
+     .swiper-container {
+             width: 100% !important;
+    }
+     
+    .swiper-border{
+        display: none !important;
+    }
+}

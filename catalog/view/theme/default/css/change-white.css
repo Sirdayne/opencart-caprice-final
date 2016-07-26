@@ -1,0 +1,87 @@
+/*.wrapper{
+    box-sizing: border-box;
+    margin: 25px 20px;
+    width: auto;
+    background: #E95386;
+}*/
+
+.wrapper {
+    background-color: #E95386;
+}
+
+.logo-white{
+    background: url(../img/logo.svg) center center no-repeat;
+    background-size: 100%;
+}
+
+.adress-white{
+    color: #FFF;
+}
+
+.nav-fd-white a, .nav-fd-white p{
+    color: #FFF !important;
+}
+
+.nav-fd-white>ul>li>ul>li>a:hover{
+    color: #E95386 !important;
+}
+
+.dropdown-arrow:after {
+  border-left: 1px solid #fff !important;
+  border-bottom: 1px solid #fff !important;
+
+}
+
+
+.button-bas-white {
+  background: transparent !important;
+  border: 1px solid #fff !important;
+  color: #fff !important;
+}
+
+.button-bas-white:hover {
+  background-color: #fff !important;
+  color:#E25082!important;
+}
+
+
+.content-holder .nav-fd-white {
+      border-top:1px solid #fff !important;
+}
+
+
+.m-logo-top-white{
+    background: url(../img/logo-kapriz.png) center center no-repeat;
+    background-size: 100%;
+}
+
+.m-basket-white{
+     background-position:0 0 !important;
+}
+
+button.toggle-menu-white span, button.toggle-menu-white span:after, button.toggle-menu-white span:before{
+    background-color: #fff !important;
+}
+
+.m-toptel-white{
+    background: url("../img/trubka-white.png") no-repeat 0 50%;
+}
+
+.m-toptel-white a{
+    color: #fff !important;
+}
+
+
+
+.footer-white{
+    color: #FFF;
+    border-color: #FFF;
+    border-bottom: 0;
+}
+.footer-white a{
+    color: #FFF !important;
+}
+.logo-footer-white{
+    background: url(../img/logo-kapriz.png) center center no-repeat;
+    background-size: 100%;
+}

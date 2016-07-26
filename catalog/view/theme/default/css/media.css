@@ -1,0 +1,505 @@
+@media (min-width: 1200px) {
+
+}
+@media (max-width: 1200px) {
+    /*Для страниц с белой подложкой*/
+    .white-wrapper .content-holder nav>ul {width:792px;margin: 0 auto;}
+    .white-wrapper .content-holder nav>ul>li {margin-right: 100px;}
+    .header-picture {width:900px}
+    .header-picture-desc h1 { font-size: 30px; margin-bottom: 10px;}
+    .header-picture-desc p { font-size: 14px;}
+    .header-picture .hpd-4 { padding-top: 10px;}
+    .header-picture-desc { width: 380px; height: 350px;}
+    .wedding-picture {background-size:710px; height: 540px;}
+    .wedding-picture div { height: 465px;}
+    .header-picture-desc:after { width: 359px; height: 341px;}
+    .photosession-picture {height: 630px;background-size:925px;}
+    .header-picture .hpd-3 { width: 372px; height: 362px;}
+    .datedecor-picture {
+        background-position: -88px -42px;
+        background-size: 988px;
+        height: 550px;
+    }
+    .eventdecor-picture {height: 610px;background-size: 902px;}
+    .hpd-2:after {height: 383px;}
+}
+@media (max-width: 1160px) {
+    .content-holder nav>ul {width:792px;margin: 0 auto;}
+    .content-holder nav>ul>li {margin-right: 100px;}
+    .pink-middle { width: 510px;}
+    .pink-middle h3{ left: calc(50% - 132px);top: -60px;width: 270px;}
+    .delivery-pics-item {
+        width: 200px;
+        height: 150px;
+        margin-right: 70px;
+    }
+    .delivery-pics-item img {width: 100%;}
+    .delivery-pics-wrapper {width: 750px;}
+    .inner-text {
+        padding:70px 0 0 25px;
+    }
+}
+@media (max-width: 1020px) {
+    .content-holder nav>ul {width:792px;margin: 0 auto;}
+    .content-holder nav>ul>li {margin-right: 100px;}
+    .mapandq-wrap { width: 540px;}
+    .map-border { width: 100%;}
+    .question { width: 100%;margin: 50px 0 0 0;}
+}
+@media (max-width: 991px) {
+    .slider {width:100%;}
+    .letter1, .letter2, .letter3, .letter4, .letter5, .letter6, .box-lines {display: none;}
+    .block1 { margin:0px 25px 0 0;}
+    .block3 { margin:25px 25px 0 0;}
+    .block4 { margin:25px 0 0 0;}
+    .services {width: 725px;padding:80px 0;}
+    .find-wrapper {width: 500px;margin:0 auto 100px;}
+    .left-find {height:450px;float:none;}
+    .right-find {
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .footer-menu { width: 666px;}
+    .footer-menu>div { margin-right: 30px;}
+    .under-footer {width:666px;}
+    .under-footer-dark {left: calc(50% - 334px)}
+
+    /*Для страниц с белой подложкой*/
+    .white-wrapper .content-holder nav>ul {width:680px;margin: 0 auto;}
+    .white-wrapper .content-holder nav>ul>li {margin-right: 72px;}
+    .header-picture { width: 600px;}
+    .header-picture .hpd-4 { padding-top: 60px;}
+    .header-picture-desc {width: 280px;height: 200px;}
+    .header-picture-desc:after { width:259px; height: 179px;}
+    .header-picture-desc p { display: none;}
+    .wedding-picture { -webkit-background-size: 570px; background-size: 570px; height: 430px;}
+    .wedding-picture div { height: 373px;}
+    .m-under-desc { display: block;}
+    .secrets ul li { padding-left: 55px;}
+    .secrets ul li:before { width: 35px;}
+    .big-bouquet {justify-content: flex-end;}
+    .numbers-wrap { width: 420px;}
+    .number-box:nth-child(2) {margin: 0 0 40px 0;}
+    .middle {flex-wrap:wrap-reverse;}
+    .akciya-foto { width: 90%;}
+    .timer {height: 150px;margin-top: 20px;width: 100%;}
+    .timer:before, .timer:after { height: 15%;}
+    .photosession-picture {height:415px;background-size:600px;}
+    .header-picture .hpd-3 {width:246px;height:236px;padding-top: 92px;}
+    .header-picture-desc:after { width: 225px; height: 215px;}
+    .header-picture-desc h1.romantic-h1 { font-size: 26px;}
+    .header-picture-desc {
+        width: 244px;
+        height: 254px;
+        padding: 71px 0 20px 38px;
+    }
+    .datedecor-picture {
+        background-position: -88px -42px;
+        background-size: 750px;
+        height: 410px;
+    }
+    .eventdecor-picture {height: 430px;background-size: 620px;}
+    .header-picture .hpd-2 {
+        height: 243px;
+        width: 235px;
+        padding: 70px 0 20px 18px;
+    }
+    .hpd-2:after {
+        width: 214px;
+        height: 222px;
+    }
+    .adr-box:nth-child(2) {margin: 0 0 40px 0;}
+    .adress-holder {width: 440px;margin: 80px auto 50px;}
+    .basket-wrapper { width: 600px;}
+    .item-desc {margin-left: 30px;}
+    .md-modal { width: 600px;}
+    .inner-text { line-height:20px;}
+    .inner-text h3 { font-size: 30px;}
+    .inner-text p { font-size: 16px;}
+}
+@media (max-width: 900px) {
+    .content-holder nav>ul {width:680px;margin: 0 auto;}
+    .content-holder nav>ul>li {margin-right: 72px;}
+    .delivery-pics-item {
+        width: 250px;
+        height: 186px;
+        margin: 0 0 50px 0;
+    }
+    .delivery-pics-wrapper {width: 250px;}
+}
+@media (max-width: 810px) {
+    /*Для страниц с белой подложкой*/
+    .white-wrapper .content-holder {display: none;}
+    .white-wrapper .content-holder-mobile, .dark .m-menu, .dark .m-toggle-menu {display: block;}
+    .white-wrapper { margin: 10px 5px;}
+    .a-item {
+        width: 80%;
+        float: none;
+        margin: 0 auto 8%;
+    }
+    .a-item:nth-child(even) { margin: 0 auto 5%;}
+}
+@media (max-width: 767px) {
+    .content-holder {display: none;}
+    .content-holder-mobile, .m-menu, .m-toggle-menu {display: block;}
+    .slider {height:400px;margin-top: 40px;}
+    .slick-slider .slick-list {padding: 0 !important;}
+    .composition-b {left:204px;top:24px;}
+    .composition {margin-bottom: 4px;}
+    .slick-dots {top:320px;}
+    .slick-dots li {width:25px;height:39px;}
+    .slick-dots li button {
+        -webkit-background-size:25px;
+        background-size:25px;
+    }
+    .slick-dots li.slick-active button {
+        -webkit-background-size:57px;
+        background-size:57px;
+        background-position: 0 3px;
+    }
+    .slick-dots li {margin:0 0 0 20px}
+    .bouquets__links-b {width: 360px;margin:50px auto 20px;}
+    .bouquets__links {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        justify-content: space-between;
+    }
+    .top-blinks, .bot-blinks {
+        flex-direction: column;
+    }
+    .bouquets__title { font-size: 22px;}
+    .bouquets__title-big { font-size: 50px;}
+    .services { width: 350px;}
+    .block1, .block2, .block3, .block4 {margin: 0 0 50px 0;}
+
+    /*Для страниц с белой подложкой*/
+    .flower-box {
+        width:300px;
+        height: 180px;
+        background-size: 232px;
+        background-position: left top;
+    }
+    .flower-box-2 { background-position: right center;}
+    .flower-box:after { width: 284px; height: 160px;}
+    .desc-box {
+        width: 270px;
+        left: 209px;
+        top: 44px;
+    }
+    .desc-box h2 { margin-bottom: 15px;}
+    .desc-box-2 {left:-170px;}
+    .box {display: none;}
+    .box-tablet {display: block;}
+    .middle-wrapper {width:500px;}
+    .box-2 {top:30px;}
+    .reasons-wrap { width: 400px;padding: 0;}
+    .secrets { width: 100%;}
+    .secrets h3 { padding-left: 55px; font-size: 17px; margin-bottom: 50px;}
+    .secrets h3 span { font-size: 20px;}
+    .big-bouquet {
+        position: absolute;
+        left: 175px;
+        top: -45px;
+        width: 200px;
+    }
+    .portfolio h3 { font-size: 22px;}
+    .basket-wrapper { width: 450px;}
+    .item-btns { position: absolute;bottom: 30px; right: 35px;}
+    .basket-item {padding: 50px 0 140px 0;}
+    .inner-text { display: none;}
+    .outer-text { display: block;}
+    .main img { display: none;}
+    .main img[src*='dinara'] { display: block;}
+}
+
+@media (max-width: 700px) {
+    .right-find, footer {display:none;}
+    .m-footer-contacts, .trepet {display:block;}
+    .find-wrapper { margin:0 auto 70px;}
+    .social-block {width:200px;margin:20px auto 0;}
+
+    /*Для страниц с белой подложкой*/
+    .header-picture { width: 420px;}
+    .wedding-picture {background-size: 380px;height: 290px;}
+    .wedding-picture div { height: 249px;}
+    .header-picture-desc h1 { font-size: 24px;}
+    .header-picture .hpd-4 { padding-top: 48px; padding-left: 46px;}
+    .header-picture-desc {width:210px;height:160px;}
+    .trepet-dark img {display: none;}
+    .trepet-dark img[src*=dark] {display: block;}
+    .photosession-picture {height: 290px;background-size: 420px;}
+    .header-picture .hpd-3 { width: 188px; height: 181px; padding-top: 70px;}
+    .datedecor-picture {
+        background-position: -88px -42px;
+        background-size: 542px;
+        height: 290px;
+    }
+    .header-picture-desc h1.romantic-h1 {font-size: 20px;}
+    .header-picture-desc {
+        width: 186px;
+        height: 188px;
+        padding: 39px 0 0 25px;
+    }
+    .header-picture-desc-roma:after {width: 165px;height: 167px;}
+    .eventdecor-picture {height: 295px;background-size: 425px;}
+    .header-picture .hpd-2 {
+        height: 170px;
+        width: 190px;
+        padding: 50px 0 20px 18px;
+    }
+    .hpd-2 h1 { font-size: 22px;}
+    .buy-form-l, .buy-form-r { width: 100%;}
+    .md-modal { width: 400px;}
+    .md-content input, .md-content textarea { width: 100%;box-sizing: border-box;}
+    .mobile-close-btn { display: block;}
+    .mfc-holder {padding-bottom: 80px;}
+}
+
+@media (max-width: 599px) {
+    .composition-b {left: calc(50% - 125px);top: 310px;}
+    .slider__item__discount {left:20%;top:130px;}
+    .composition {
+        float: left;
+        margin: 0;
+        text-align: center;
+        padding: 0 15px;
+        border-bottom:0;
+        border-right: 1px solid rgba(255,255,255,.5);
+    }
+    .composition:last-child {
+        padding-right:0;
+        border-right: 0;
+    }
+    .find-wrapper {width:100%;}
+    .left-find {height: 650px;margin:0 auto 100px;width:100%;}
+    .how-img-2 div {display: none;}
+    .how-img-3 div {
+        top: 245px;
+        left: 50%;
+        margin-left: -64px;
+    }
+    .how-img-3 div:after {
+        height:52px;
+        width:3px;
+        top: -60px;
+        left: 50%;
+    }
+    .how-img-3 div a { font-size: 20px;}
+    .how-img-1 {width: 100%;text-align: center;}
+    .how-img-2 {top:150px;left:auto;width: 100%;text-align: center;}
+    .how-img-3 {top:340px;left:auto;width:100%;text-align:center;}
+
+    /*Для страниц с белой подложкой*/
+    .desc-box h2 { font-size: 14px;}
+    .desc-box { left: 170px;}
+    .box-tablet { left: 90px;}
+    .middle-wrapper { width: 415px;}
+    .box-2.box-tablet {left:0;}
+    .desc-box-2 {left:-130px;}
+    .pink-middle {
+        width: 220px;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        padding: 20px 0 20px 20px;
+    }
+    .step-1 {order:1;}
+    .step-2 {order:2;}
+    .step-3 {order:3;}
+    .step-2 .step-icon-holder {background-position: -46px 6px;}
+    .step-3 .step-icon-holder {background-position: -87px 0;}
+    .pink-middle>div {
+        float: none;
+        width: 100%;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+    }
+    .pink-middle>div>div {
+        width: 40px;
+        height: 55px;
+        float:left;
+        -webkit-background-size: 120px!important;
+        background-size: 120px!important;
+    }
+    .pink-middle>div p {
+        line-height: 16px;
+        display: block;
+        font-size: 13px;
+        text-align: left;
+        margin:0;
+    }
+    .pink-middle>div.step-1 p { margin-top: 10px;}
+    .pink-middle>div.step-1, .pink-middle>div.step-2 { margin-bottom: 20px;}
+    .step-1 .step-icon-holder, .step-2 .step-icon-holder, .step-3 .step-icon-holder {margin: 0 10px 0 0;}
+    .numbers-wrap { width: 200px;}
+    .number-box { margin:0 0 40px 0;}
+    .middle, .akciya-foto { width: 100%;}
+    .portfolio h3 { font-size: 18px;}
+    .adress-holder {width:200px;margin:50px auto;}
+    .adr-box {margin: 0 0 10px 0!important;}
+    .map-border {width: 100%;padding: 10px 0 5px 0;height: 381px;}
+    .map-border:before {right:-10px;top:-10px;}
+    .map {left:-10px;}
+    .mapandq-wrap {width:400px;}
+    .basket-wrapper { width: 270px;}
+    .basket-item {flex-wrap:wrap; padding: 50px 0;    justify-content: center;}
+    .item-btns { position: static; text-align: center;}
+    .item-desc { margin: 35px 0 25px 0; text-align: center;}
+    .delivery-info {width: 310px;}
+    .delivery-info p {font-size: 16px;}
+}
+
+@media (max-width: 450px) {
+    .m-logo-top { margin: 10px 0 0 10px; }
+    .m-rbox { margin: 10px 0 0 0; }
+    .slider__prev, .slider__next { display: none !important; }
+    .m-basket {
+        display: block;
+        margin: 0 auto 5px;
+        position: relative;
+        top: auto;
+    }
+    .m-rbox { width: 172px; }
+    .m-toptel {
+        padding-left: 0;
+        background: none !important;
+        margin: 10px auto;
+        float: none;
+    }
+    .button {
+        width: 105px;
+        display: block;
+        margin: 10px auto 0;
+    }
+    .bouquets-b { padding: 50px 0;}
+    .bouquets__link { font-size: 14px;}
+    .bouquets__links { justify-content: space-around;}
+    .bouquets__link-b { width: 120px;}
+    .bouquets__links-b { width: 100%;}
+    .bouquets__title { font-size: 18px;}
+    .bouquets__title-big { font-size: 30px;}
+    .services {width:100%;}
+    .services__item {
+        width:100%;
+        float: none;
+        margin: 0 auto 40px;
+        height:auto;
+    }
+    .m-menu-ul {
+        padding-top: 71px;
+        width: 180px;
+        -moz-transform: translateX(-180px);
+        -ms-transform: translateX(-180px);
+        -o-transform: translateX(-180px);
+        -webkit-transform: translateX(-180px);
+        transform: translateX(-180px);
+    }
+    .m-toggle-menu.active-menu {
+        -moz-transform: translateX(180px);
+        -ms-transform: translateX(180px);
+        -o-transform: translateX(180px);
+        -webkit-transform: translateX(180px);
+        transform: translateX(180px);
+    }
+
+    /*Для страниц с белой подложкой*/
+    .m-fir-header {padding-bottom: 20px;}
+    .wedding-picture {background-size: 240px;height:180px;}
+    .wedding-picture div {height: 157px;}
+    .header-picture { width: 277px;}
+    .header-picture-desc { width: 140px; height: 130px;}
+    .header-picture .hpd-4{padding: 32px 5px 0 30px;}
+    .header-picture-desc h1 { font-size: 18px;}
+    .header-picture-desc:after { width: 119px; height: 109px;}
+    .m-under-desc { padding:0 5px;}
+    .flower-box {
+        width: 200px;
+        height: 120px;
+        background-position: 6% -15px;
+        background-size: 150px;
+        float: none;
+    }
+    .flower-box-2 {background-position: right center;background-size: 150px;}
+    .flower-box-3 {background-position: left bottom;background-size: 155px;}
+    .flower-box-4 {background-position:left center;background-size: 170px;}
+    .flower-box:after {width: 184px;height: 99px;}
+    .desc-box {width: 122px;left: calc(50% - 40px);top: -70px;}
+    .desc-box h2 { font-size:14px;}
+    .desc-box h2 span { font-size: 24px;}
+    .desc-box a { margin-top:170px;}
+    .m-square {
+        display: block;
+    }
+    .middle-wrapper { width: 220px;}
+    .box {display: none;}
+    .big-bouquet {
+        left: 125px;
+        top: -35px;
+        width: 150px;
+    }
+    .secrets h3 { padding-left:0;}
+    .secrets ul {max-width:inherit;min-width:inherit;}
+    .secrets ul li { padding-left: 25px;}
+    .secrets ul li:before { width: 15px;}
+    .reasons-wrap {width:95%;}
+    .akciya-descr-panel {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        top: 0;
+        left: 0;
+    }
+    .akciya-descr-panel span { margin-bottom: 5px;}
+    .akciya-descr-panel p { line-height: 16px;}
+    .akciya-text {
+        padding: 0;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+    .button { margin: 0 auto;}
+    .photosession-picture { background-position: -90px 0;}
+    .header-picture .hpd-3 {
+        width: 141px;
+        padding-left: 30px;
+        height: 181px;
+    }
+    .datedecor-picture {
+        background-position: -200px -42px;
+        background-size: 484px;
+        height: 250px;
+    }
+    .header-picture-desc-roma {width: 180px;height: 149px;}
+    .header-picture-desc h1.romantic-h1 { font-size: 18px;}
+    .header-picture-desc-roma:after {width: 159px;height: 128px;}
+    .eventdecor-picture {background-position: -146px -5px;}
+    .header-picture .hpd-2 { width: 180px;}
+    .hpd-2:after {width: 159px;height: 149px;}
+    .mapandq-wrap { width: 95%;}
+    .map-border:before { display: none;}
+    .map { left: 0;}
+    .map-border {padding:0;height: auto;}
+    .md-trigger {margin-bottom: 10px;}
+    .md-modal { width: 100%;top:0;}
+    .md-content { padding: 15px;}
+    .consult-modal {width: 280px!important;}
+    .delivery-info {width: 100%;}
+    .delivery-info p {font-size: 14px;}
+    .outer-text h3 { font-size: 20px;}
+    .about-wrapper { width: 100%;}
+}
