@@ -72,9 +72,9 @@
 				<img class="services__item__img" src="catalog/view/theme/default/img/service1.jpg" />
 				<section class="services__item__bottom">
 					<div class="services__item__bottom__title">фотосессия</div>
-					<div class="services__item__bottom__link"><a href="index.php?route=common/photosessionon">подробнее</a></div>
+					<div class="services__item__bottom__link"><a href="index.php?route=common/photosession">подробнее</a></div>
 				</section>
-				<a href="" class="services__link"></a>
+				<a href="index.php?route=common/photosession" class="services__link"></a>
 				<div class="new-box">
 					<svg width="100%" height="100%">
 						<line class="left" x1="0" y1="0" x2="0" y2="-490"></line>
@@ -94,7 +94,7 @@
 					<div class="services__item__bottom__title">свадебный декор</div>
 					<div class="services__item__bottom__link"><a href="index.php?route=common/weddingdecoration">подробнее</a></div>
 				</section>
-				<a href="" class="services__link notouch skrollable skrollable-between"></a>
+				<a href="index.php?route=common/weddingdecoration" class="services__link notouch skrollable skrollable-between"></a>
 				<div class="new-box">
 					<svg width="100%" height="100%">
 						<line class="left" x1="0" y1="0" x2="0" y2="-490"></line>
@@ -114,7 +114,7 @@
 					<div class="services__item__bottom__title">оформление мероприятий</div>
 					<div class="services__item__bottom__link"><a href="index.php?route=common/eventdecoration">подробнее</a></div>
 				</section>
-				<a href="" class="services__link notouch skrollable skrollable-between"></a>
+				<a href="index.php?route=common/eventdecoration" class="services__link notouch skrollable skrollable-between"></a>
 				<div class="new-box">
 					<svg width="100%" height="100%">
 						<line class="left" x1="0" y1="0" x2="0" y2="-490"></line>
@@ -134,7 +134,7 @@
 					<div class="services__item__bottom__title">оформление свиданий</div>
 					<div class="services__item__bottom__link"><a href="index.php?route=common/datesdecoration">подробнее</a></div>
 				</section>
-				<a href="" class="services__link"></a>
+				<a href="index.php?route=common/datesdecoration" class="services__link"></a>
 				<div class="new-box">
 					<svg width="100%" height="100%">
 						<line class="left" x1="0" y1="0" x2="0" y2="-490"></line>

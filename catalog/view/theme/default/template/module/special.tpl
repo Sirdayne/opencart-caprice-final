@@ -99,9 +99,9 @@
                        
                         <?php foreach($attribute_group['attribute'] as $attribute) { ?>
                             <div class="composition animated bounceInRight animationflower">
-                              <!--  <div class="composition__count">  
+                             <div class="composition__count">  
                                    <?php echo $attribute['text']; ?>
-                                </div>  -->
+                                </div> 
                                 <div class="composition__text">
                                     <?php echo $attribute['name']; ?>
                                 </div>

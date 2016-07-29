@@ -1,4 +1,80 @@
 
+.product__more{
+    margin-bottom: 40px;
+    visibility: hidden;
+}
+
+.product__more__info{
+    border: 2px #fff solid;
+}
+
+.margin-top{
+    margin-top: 100px !important;
+}
+
+.product-layout{
+    margin-bottom: 50px;
+}
+
+.product-thumb{
+    overflow: hidden;
+}
+.product-thumb, .product-thumb p, .product-thumb h4, .product-thumb a{
+    color: #fff !important;
+}
+
+.caption-gradient{
+    font-size: 15px;
+    height: inherit;
+    padding-top: 170px !important;
+    background: linear-gradient(to top, rgba(219,77,125,1) 0%, rgba(255,255,255,.1) 40%);
+    /*background: linear-gradient(to top, rgba(219,77,125,1) 0%, rgba(255,255,255,.1) 40%, rgba(255,255,255,.1) 80%, rgba(219,77,125,1) 100%);*/
+}
+
+.caption-gradient h4{
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 25px;
+}
+
+.caption-gradient:hover{
+    background: rgba(0,0,0,0.6);
+    padding-top: 140px !important;
+}
+
+.caption-gradient:hover .product__more{
+    visibility: visible;
+}
+
+.button-back{
+    margin-top: 20px;
+}
+
+.button-back button{
+    border: none !important;
+}
+
+.button-back button{
+    background: none !important;
+}
+
+.product-thumb .button-group{
+    background: none !important;
+    border: none !important;
+}
+
+.product-thumb .button-group button + button{
+    border: none !important;
+}
+
+.product-thumb{
+    height: 300px;
+}
+
+.pink-right-panel ul li{
+    width: 19% !important;
+}
+
 .text-decoration-underline:after{
     position: absolute;
     bottom: -4px;
@@ -533,12 +609,12 @@ input:checked + span{
 }
 
 .shopping-cart, .heart{
-    visibility: hidden;
-    height: 15px;
-    width: 15px;
+    display: none;
+    height: 20px;
+    width: 20px;
 }
 .shopping-cart{
-    background: url(../img/in_basket.png) center center no-repeat;
+    background: url(../img/in__basket.png) center center no-repeat;
     background-size: cover;
 }
 .heart{
@@ -560,7 +636,7 @@ input:checked + span{
 }
 
 .product-thumb-border:hover .shopping-cart{
-    visibility: visible;
+    display: block;
 }
 
 .product-thumb-border:hover .heart{

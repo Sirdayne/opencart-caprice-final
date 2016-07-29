@@ -13,6 +13,21 @@ class ControllerCommonWeddingdecoration extends Controller {
 		$data['content_bottom'] = $this->load->controller('common/content_bottom');
 		$data['footer'] = $this->load->controller('common/footer');
 		$data['header'] = $this->load->controller('common/header');
+		
+		
+		$data['informations'] = array();
+
+		foreach ($this->model_catalog_information->getInformations() as $result) {
+			if ($result['bottom']) {
+				$data['informations'][] = array(
+					'title' => $result['title'],
+					'description' => $result['description'],
+					'href'  => $this->url->link('information/information', 'information_id=' . $result['information_id'])
+				);
+			}
+		}
+
+		
 		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/common/weddingdecoration.tpl')) {
 			$this->response->setOutput($this->load->view($this->config->get('config_template') . '/template/common/weddingdecoration.tpl', $data));
 		} else {

@@ -1,8 +1,8 @@
 <?php
 $_ = array (
-  'heading_title' => 'Баннеры',
+  'heading_title' => 'Галерея',
   'text_success' => 'Настройки успешно изменены!',
-  'text_list' => 'Баннеры',
+  'text_list' => 'Галерея',
   'text_add' => 'Добавить',
   'text_edit' => 'Редактирование',
   'text_default' => 'По умолчанию',

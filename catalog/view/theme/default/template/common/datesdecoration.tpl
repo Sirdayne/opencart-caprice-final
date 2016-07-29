@@ -138,7 +138,8 @@
 					<li><a class="cursor-p bir_day">Дни рождения</a></li>
 					<li><a class="cursor-p wed_dec">Свадебный декор</a></li>
 					<li><a class="cursor-p rom_dat">Романтические свидания</a></li>
-					<li><a class="cursor-p dec_eve">Украшения к мероприятиям</a></li>
+					<li><a class="cursor-p dec_eve">Тематические мероприятия</a></li>
+					<li><a class="cursor-p fif_sec">Оформление дома</a></li>
 				</ul>
 			</div>
 			<div class="">
@@ -171,13 +172,27 @@
 					<a href="#" class="timer-sub">Подписаться</a>
 				</div>
 				<div class="akciya-foto">
-					<img src="catalog/view/theme/default/img/akciya-foto.jpg" alt="Акция на свадебный декор">
+					
 					<div class="akciya-descr-panel">
 						<div class="akciya-text">
+						<!--
 							<span>Акция</span>
 							<p>Закажите свадебный декор у нас <br>
 								и получите фотосессию и <br>
 								фотозону в подарок!</p>
+				        -->
+								
+				            <?php if ($informations) { ?>
+                                
+                                  <?php foreach ($informations as $information) { ?>
+                                  <span><?php echo $information['title']; ?></span>
+                                  <p><?php echo $information['description']; ?></p>
+                                  <?php } ?>
+                                
+                              <?php } ?>
+								
+								
+								
 							<a class="button block-1">заказать</a>
 						</div>
 					</div>
@@ -338,27 +353,33 @@
 <script type="text/javascript">
     	$(document).ready(function(){
             
+            $( '.akciya-foto' ).prepend( $( '#akciya' ).find('img') );
+           
             var swiperSliders = document.getElementsByClassName('swiper-container');
             
             swiperSliders[0].classList.add("swiper__0");    //bir_day
             swiperSliders[1].classList.add("swiper__1");    //wed_dec
             swiperSliders[2].classList.add("swiper__2");	//rom_dat
             swiperSliders[3].classList.add("swiper__3");	//dec_eve
+            swiperSliders[4].classList.add("swiper__4");	//fif_sec
            
             $('.bir_day').addClass("text-decoration-underline");
             $('.swiper__1').hide("fast");
             $('.swiper__2').hide("fast");
             $('.swiper__3').hide("fast");
+            $('.swiper__4').hide("fast");
             
             $('.bir_day').click(function() {
                         $('.swiper__1').hide("fast");
                         $('.swiper__2').hide("fast");
                         $('.swiper__3').hide("fast");
+                        $('.swiper__4').hide("fast");
                         $('.swiper__0').show("fast");
                 
                         $('.wed_dec').removeClass("text-decoration-underline");
                         $('.rom_dat').removeClass("text-decoration-underline");
                         $('.dec_eve').removeClass("text-decoration-underline");
+                        $('.fif_sec').removeClass("text-decoration-underline");
                         $('.bir_day').addClass("text-decoration-underline");
                 });
             
@@ -366,11 +387,13 @@
                         $('.swiper__0').hide("fast");
                         $('.swiper__2').hide("fast");
                         $('.swiper__3').hide("fast");
+                        $('.swiper__4').hide("fast");
                         $('.swiper__1').show("fast");
                 
                         $('.bir_day').removeClass("text-decoration-underline");
                         $('.rom_dat').removeClass("text-decoration-underline");
                         $('.dec_eve').removeClass("text-decoration-underline");
+                        $('.fif_sec').removeClass("text-decoration-underline");
                         $('.wed_dec').addClass("text-decoration-underline");
                         
                 });
@@ -379,11 +402,13 @@
                         $('.swiper__1').hide("fast");
                         $('.swiper__0').hide("fast");
                         $('.swiper__3').hide("fast");
+                        $('.swiper__4').hide("fast");
                         $('.swiper__2').show("fast");
                 
                         $('.wed_dec').removeClass("text-decoration-underline");
                         $('.bir_day').removeClass("text-decoration-underline");
                         $('.dec_eve').removeClass("text-decoration-underline");
+                        $('.fif_sec').removeClass("text-decoration-underline");
                         $('.rom_dat').addClass("text-decoration-underline");
                 });
             
@@ -391,13 +416,31 @@
                         $('.swiper__1').hide("fast");
                         $('.swiper__2').hide("fast");
                         $('.swiper__0').hide("fast");
+                        $('.swiper__4').hide("fast");
                         $('.swiper__3').show("fast");
                 
                         $('.wed_dec').removeClass("text-decoration-underline");
                         $('.rom_dat').removeClass("text-decoration-underline");
                         $('.bir_day').removeClass("text-decoration-underline");
+                        $('.fif_sec').removeClass("text-decoration-underline");
                         $('.dec_eve').addClass("text-decoration-underline");
                 });
+            
+             $('.fif_sec').click(function() {
+                        $('.swiper__1').hide("fast");
+                        $('.swiper__2').hide("fast");
+                        $('.swiper__0').hide("fast");
+                        $('.swiper__3').hide("fast");
+                        $('.swiper__4').show("fast");
+                
+                        $('.wed_dec').removeClass("text-decoration-underline");
+                        $('.rom_dat').removeClass("text-decoration-underline");
+                        $('.bir_day').removeClass("text-decoration-underline");
+                        $('.dec_eve').removeClass("text-decoration-underline");
+                        $('.fif_sec').addClass("text-decoration-underline");
+                });
+         
+         
 		});
  </script>
 

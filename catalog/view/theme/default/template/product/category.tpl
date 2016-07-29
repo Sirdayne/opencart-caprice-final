@@ -1,6 +1,5 @@
 <?php echo $header; ?>
 
-
 <div class="container margin-top">
   <ul class="breadcrumb">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
@@ -97,15 +96,20 @@
       <br />
      <div class="row">
         <?php foreach ($products as $product) { ?>
-        <div class="product-layout col-lg-4 col-md-4 col-sm-6 col-xs-12">
-          <div class="product-thumb product-thumb-border">
-            <div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive" /></a></div>
-            <div class="product-line"></div>
-            <div>
-              <div class="caption text-align-product">
+        <div class="product-layout col-lg-4 col-md-4 col-sm-6 col-xs-6 col-custom">
+          <div class="product-thumb product-thumb-border" style="background: url(<?php echo $product['thumb']; ?>) center center no-repeat !important; background-size: 100% !important;">
+           <!-- Image of Product in Catalog Картинка товара в каталоге букеты
+           <div class="image image-abs"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive" /></a></div>
+           -->
+               
+              <!--<div class="product-line"></div>-->
+              
+              <div class="caption caption-gradient text-align-product">
+               
+                <div class="product__more"><a href="<?php echo $product['href']; ?>" class="product__more__info">&nbsp ПОДРОБНЕЕ &nbsp</a></div>
                 
-                <p><?php echo $product['description']; ?></p>
-                <h4><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></h4>
+                <p class=""><?php echo $product['description']; ?></p>
+                <h4><?php echo $product['name']; ?></h4>
                 
                 <?php if ($product['rating']) { ?>
                 <div class="rating">
@@ -130,15 +134,15 @@
                   <?php } ?>
                 </p>
                 <?php } ?>
-             </div>
-             
-              <div class="button-group button-custom">
+            <div class="button-back">
                 <button type="button" onclick="cart.add('<?php echo $product['product_id']; ?>', '<?php echo $product['minimum']; ?>');"><i class="fa shopping-cart"></i></button>
-                <button type="button" data-toggle="tooltip" onclick="wishlist.add('<?php echo $product['product_id']; ?>');"><i class="fa heart"></i></button>
+             <!--   <button type="button" data-toggle="tooltip" onclick="wishlist.add('<?php echo $product['product_id']; ?>');"><i class="fa heart"></i></button> -->
              <!--   <button type="button" data-toggle="tooltip" title="<?php echo $button_wishlist; ?>" onclick="wishlist.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-heart"></i></button> -->
                 <!--<button type="button" data-toggle="tooltip" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-exchange"></i></button>-->
               </div>
-            </div>
+                
+             </div>
+             
           </div>
         </div>
         <?php } ?>
@@ -157,7 +161,6 @@
       <?php echo $content_bottom; ?></div>
     <?php echo $column_right; ?></div>
 </div>
-
 
         <section class="how-find how-find-dark">
 			
@@ -184,7 +187,6 @@
 			</div>
 		</section>
 		
-		
 		<!--
 		   <footer>
 			<div class="catalog-footer">
@@ -210,12 +212,8 @@
 		</footer>
         -->
 		
-
-
-    
 <script type="text/javascript">
     	$(document).ready(function(){
-            
             
             var spoilerLinks = document.getElementsByClassName('spoiler_links-3');
             var spoilerBody = document.getElementsByClassName('spoiler_body-3');
@@ -260,27 +258,27 @@
             $('.spoiler_links').click(function(){
                     $(this).parent().children('div.spoiler_body').toggle('normal');
                 return false;
-                });
+            });
 
                 $('.spoiler_links-1').click(function(){
                     $(this).parent().children('div.spoiler_body-1').toggle('normal');
                 return false;
-                });
+            });
 
                 $('.spoiler_links-2').click(function(){
                     $(this).parent().children('div.spoiler_body-2').toggle('normal');
                 return false;
-                });
+            });
 
                 $('.spoiler_links-3').click(function(){
                     $(this).parent().children('div.spoiler_body-3').toggle('normal');
                 return false;
-                });
+            });
 
                 $('.spoiler_links-4').click(function(){
                     $(this).parent().children('div.spoiler_body-4').toggle('normal');
                 return false;
-                });
+            });
                 
                 
             
@@ -288,16 +286,11 @@
  </script>
  
  
-         
-        
-    <script type="text/javascript">
-    	$(function () {
-                $('#navact-3').addClass('active-menu');
-		});
-    </script>
-
-
-
+<script type="text/javascript">
+    $(function () {
+            $('#navact-3').addClass('active-menu');
+    });
+</script>
 
 
 <?php echo $footer; ?>

@@ -1,76 +1,17 @@
-/*
-@media screen and (max-height: 600px) {
-    .hide{
-        display: none !important;
-    }
 
-}
-
-@media screen and (max-width: 1360px){
-    
-    .header-address{
-        width: 25% !important;
-    }
-    
-    .option, .price{
-        width: 50% !important;
+@media (max-width: 1200px) {
+ .pink-right-panel ul li{
+        width: 49% !important;
+        margin-bottom: 25px !important;
     }
 }
-
-@media screen and (max-width: 1000px) {
-    .showcase{
-        width: 700px !important;
-    }
-    
-}
-
-@media screen and (max-width: 700px) {
-    
-    .hide{
-        display: none !important;
-    }
-    
-    
-    body{
-        padding: 5px;
-    }
-    
-    .showcase{
-        width: 400px !important;
-    }
-    
-    .header-address, .option, .price{
-        width: 100% !important;
-    }
-	
-	.header-logo--kapriz{
-	margin-left: 25% !important;
-	margin-right: 25% !important;
-	}
-      
-}
-
-@media screen and (max-width: 500px) {
-    .footer-text, .footer-GI{
-        width: 100% !important;
-    }
-	
-	.footer-logo{
-		margin-left: 35% !important;
-	}
-	
-	.header-address{
-		text-align: center;
-	}
-  
-    
-} */
 
 
 @media (max-width: 1000px) {
     .spoiler-square, .spoiler-square-2{
         display: none !important;
     }
+    
 }
 
 
@@ -104,6 +45,11 @@
         height: 90%;
     }
     
+    .pink-right-panel ul li{
+        width: 89% !important;
+        margin-bottom: 25px !important;
+    }
+    
 }
 
  @media (max-width: 450px) {
@@ -113,5 +59,10 @@
      
     .swiper-border{
         display: none !important;
+    }
+     
+    
+    .col-custom{
+        width: 100% !important;
     }
 }

@@ -130,13 +130,26 @@
 					<a href="#" class="timer-sub">Подписаться</a>
 				</div>
 				<div class="akciya-foto">
-					<img src="catalog/view/theme/default/img/akciya-foto-2.jpg" alt="Акция на фотосессию">
+					
 					<div class="akciya-descr-panel">
-						<div class="akciya-text">
+							<div class="akciya-text">
+						<!--
 							<span>Акция</span>
-							<p>Закажите свадебный декор у нас<br>
-								и получите фотосессию и<br>
-								фотозону в подарок!</p>
+							<p>Закажите фотосессию сейчас и <br>
+								получите 5%-ную скидку!</p>
+				        -->
+									
+				            <?php if ($informations) { ?>
+                                
+                                  <?php foreach ($informations as $information) { ?>
+                                  <span><?php echo $information['title']; ?></span>
+                                  <p><?php echo $information['description']; ?></p>
+                                  <?php } ?>
+                                
+                              <?php } ?>
+								
+								
+								
 							<a class="button block-1">заказать</a>
 						</div>
 					</div>
@@ -291,5 +304,14 @@
         loop: true
     });
     </script>
-        
+       
+               
+<script type="text/javascript">
+    	$(document).ready(function(){
+            
+            $( '.akciya-foto' ).prepend( $( '#akciya' ).find('img') );
+            
+        });
+</script>
+
 <?php echo $footer; ?>
