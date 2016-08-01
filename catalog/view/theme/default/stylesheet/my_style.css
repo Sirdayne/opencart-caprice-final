@@ -1,3 +1,11 @@
+.slider__item__discount a{
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.price .price-new{
+    font-size: 16px;
+}
 
 .product__more{
     margin-bottom: 40px;
@@ -27,7 +35,7 @@
     font-size: 15px;
     height: inherit;
     padding-top: 170px !important;
-    background: linear-gradient(to top, rgba(219,77,125,1) 0%, rgba(255,255,255,.1) 40%);
+    background: linear-gradient(to top, rgba(219,77,125,1) 0%, rgba(219,77,125,1) 20%, rgba(255,255,255,.1) 40%);
     /*background: linear-gradient(to top, rgba(219,77,125,1) 0%, rgba(255,255,255,.1) 40%, rgba(255,255,255,.1) 80%, rgba(219,77,125,1) 100%);*/
 }
 

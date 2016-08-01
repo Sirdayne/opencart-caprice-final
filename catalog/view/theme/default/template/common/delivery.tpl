@@ -80,7 +80,7 @@
 				<a href="tel:+77172265050">+7(7172) 26 50 50</a>
 			</div>
 			<div class="trepet trepet-dark trepet-contacts">
-				<span>Разработано <br>с особым трепетом <a href=""><img src="catalog/view/theme/default/img/mini-logo-gi.png" alt=""><img src="catalog/view/theme/default/img/mini-logo-gi-dark.png" alt=""></a></span>
+				<span>Разработано <br>с особым трепетом <a href="http://ginnova.kz"><img src="catalog/view/theme/default/img/mini-logo-gi.png" alt=""><img src="catalog/view/theme/default/img/mini-logo-gi-dark.png" alt=""></a></span>
 			</div>
 		</div>
 		  

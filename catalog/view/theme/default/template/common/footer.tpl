@@ -39,7 +39,7 @@
 			</div>
 			<div class="under-footer under-footer-dark clearfix">
 				<div class="left-uf">www.ginnova.kz</div>
-				<div class="right-uf">Разработано с особым трепетом <span>|</span><img src="catalog/view/theme/default/img/mini-logo-gi.png" alt="Логотип lobal Innovations"></div>
+                <div class="right-uf">Разработано с особым трепетом <span>|</span><a href="http://ginnova.kz"><img src="catalog/view/theme/default/img/mini-logo-gi.png" alt="Логотип lobal Innovations"></a></div>
 			</div>
 		</footer>
 	</div>

@@ -191,7 +191,7 @@
 				</div>
 			</div>
 			<div class="trepet">
-				<span>Разработано <br>с особым трепетом <a href=""><img src="catalog/view/theme/default/img/mini-logo-gi.png" alt=""></a></span>
+				<span>Разработано <br>с особым трепетом <a href="http://ginnova.kz"><img src="catalog/view/theme/default/img/mini-logo-gi.png" alt=""></a></span>
 			</div>
 		</section>
 		
