@@ -62,6 +62,7 @@
     }
     .footer-menu { width: 666px;}
     .footer-menu>div { margin-right: 30px;}
+    .footer-menu>a { margin-right: 30px;}
     .under-footer {width:666px;}
     .under-footer-dark {left: calc(50% - 334px)}
 

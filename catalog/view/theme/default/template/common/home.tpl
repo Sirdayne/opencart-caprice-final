@@ -169,7 +169,7 @@
 					<p class="social">Мы в соц сетях</p>
 					<div class="social-block clearfix">
 						<a href="#" class="inst">instagram</a>
-						<a href="#" class="twit">twitter</a>
+						<!--<a href="#" class="twit">twitter</a>-->
 						<a href="#" class="fb">facebook</a>
 						<a href="#" class="vk">vkontakte</a>
 					</div>
@@ -178,7 +178,7 @@
 					<p class="social">Мы в соц сетях</p>
 					<div class="social-block clearfix">
 						<a href="#" class="inst">instagram</a>
-						<a href="#" class="twit">twitter</a>
+						<!--<a href="#" class="twit">twitter</a>-->
 						<a href="#" class="fb">facebook</a>
 						<a href="#" class="vk">vkontakte</a>
 					</div>
@@ -191,7 +191,7 @@
 				</div>
 			</div>
 			<div class="trepet">
-				<span>Разработано <br>с особым трепетом <a href="http://ginnova.kz"><img src="catalog/view/theme/default/img/mini-logo-gi.png" alt=""></a></span>
+				<a href="http://ginnova.kz"><span>Разработано <br>с особым трепетом <img src="catalog/view/theme/default/img/mini-logo-gi.png" alt=""></a></span>
 			</div>
 		</section>
 		

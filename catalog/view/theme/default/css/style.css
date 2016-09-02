@@ -221,19 +221,31 @@ body {
   position:absolute;
   left:-9999px;
   opacity:0;
-  -webkit-transition:0.25s linear opacity;
+  -webkit-transition:0.3s linear opacity;
   border:1px solid #fff;
   background: #E25082;
   z-index:10;
 }
 .content-holder nav ul ul li{
   display: block;
+  
+}
+.nav-hover{
+    position: absolute;
+    height: 30px;
+    width: 20px;
+    right: -25px;
+    top: 0;
 }
 .content-holder nav ul ul a{
   white-space:nowrap;
   display:block;
   padding:10px;
   text-align: center;
+}
+.nav-hover:hover+ul {
+  left:0;
+  opacity:1;
 }
 .content-holder nav ul li:hover ul {
   left:0;
@@ -255,7 +267,7 @@ body {
   position: absolute;
   right: 50%;
   margin-right: -50px;
-  top: 50%;
+  top: 49%;
   margin-top: -8px;
 }
 .content-holder nav ul li a:hover{
@@ -746,7 +758,7 @@ section.how-find h5 {
     text-indent:-9999px;
     display: block;
     float: left;
-    margin-right:20px;
+    margin: 0 0 0 30px;
     width: 34px;
     height: 34px;
 }
@@ -759,6 +771,7 @@ section.how-find h5 {
 .social-block a.fb {
     background: url("../img/social-icon-set.png") -88px 0 no-repeat;
     width:18px;
+    margin-top: -1px;
 }
 .social-block a.vk {
     background: url("../img/social-icon-set.png") -115px 0 no-repeat;
@@ -1666,7 +1679,7 @@ footer {
 }
 .social-contacts a.inst {background: url("../img/social-iconset-dark.png") no-repeat 0 0;}
 .social-contacts a.twit {background: url("../img/social-iconset-dark.png") no-repeat -36px 0;}
-.social-contacts a.fb {background: url("../img/social-iconset-dark.png") no-repeat -66px 0;}
+.social-contacts a.fb {background: url("../img/social-iconset-dark.png") no-repeat -66px 0; margin-bottom: 1.5px;}
 .social-contacts a.vk {background: url("../img/social-iconset-dark.png") no-repeat -98px 0; width:40px;margin: 0;}
 .mapandq-wrap {
     width:900px;
@@ -2502,4 +2515,7 @@ a.link-with-circle.circle-up .circle{
 .a-item-text h2 span{
     font-size: 26px;
     display: block;
+}
+button{
+    outline: none;
 }

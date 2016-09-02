@@ -1,15 +1,13 @@
 <?php
 // HTTP
-//define('HTTP_SERVER', 'kapriz.local/');
-$host = $_SERVER['HTTP_HOST'];
-define('HTTP_SERVER', 'http://'.$host.'/');
+define('HTTP_SERVER', 'kapriz.local/');
+
 
 // HTTPS
-//define('HTTPS_SERVER', 'kapriz.local/');
-define('HTTPS_SERVER', 'http://'.$host.'/');
+define('HTTPS_SERVER', 'kapriz.local/');
+
 
 // DIR
-/*
 define('DIR_APPLICATION', '/catalog/');
 define('DIR_SYSTEM', '/system/');
 define('DIR_LANGUAGE', '/catalog/language/');
@@ -21,20 +19,6 @@ define('DIR_DOWNLOAD', '/system/storage/download/');
 define('DIR_LOGS', '/system/storage/logs/');
 define('DIR_MODIFICATION', '/system/storage/modification/');
 define('DIR_UPLOAD', '/system/storage/upload/');
-*/
-
-$dir = dirname(__FILE__);
-define('DIR_APPLICATION', $dir . '/catalog/');
-define('DIR_SYSTEM', $dir . '/system/');
-define('DIR_LANGUAGE', $dir . '/catalog/language/');
-define('DIR_TEMPLATE', $dir . '/catalog/view/theme/');
-define('DIR_CONFIG', $dir . '/system/config/');
-define('DIR_IMAGE', $dir . '/image/');
-define('DIR_CACHE', $dir . '/system/storage/cache/');
-define('DIR_DOWNLOAD', $dir . '/system/storage/download/');
-define('DIR_LOGS', $dir . '/system/storage/logs/');
-define('DIR_MODIFICATION', $dir . '/system/storage/modification/');
-define('DIR_UPLOAD', $dir . '/system/storage/upload/');
 
 // DB
 define('DB_DRIVER', 'mysqli');

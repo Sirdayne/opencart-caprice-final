@@ -56,8 +56,8 @@
 					- в выборе свадебных букетов,<br>
 					- в дополнении свадебного образа цветами,<br>
 					- в украшении стола молодоженов,<br>
-					- в оформлении столов для гостей на свадьбе,<br>
-					- в оформлении арок, президиумов, подарочных букетов
+					- в оформлении столов <br>для гостей на свадьбе,<br>
+					- в оформлении арок, <br>президиумов, подарочных букетов
 				</p>
 			</div>
 			<div class="pic-wrapper wedding-picture"><div></div></div>
@@ -283,18 +283,18 @@
 					<p class="social">Мы в соц сетях</p>
 					<div class="social-block clearfix">
 						<a href="#" class="inst">instagram</a>
-						<a href="#" class="twit">twitter</a>
+						<!--<a href="#" class="twit">twitter</a>-->
 						<a href="#" class="fb">facebook</a>
-						<a href="#" class="vk">vkontakte</a>
+						<!--<a href="#" class="vk">vkontakte</a>-->
 					</div>
 				</div>
 				<div class="m-footer-contacts m-footer-contacts-dark">
 					<p class="social">Мы в соц сетях</p>
 					<div class="social-block clearfix">
 						<a href="#" class="inst">instagram</a>
-						<a href="#" class="twit">twitter</a>
+						<!--<a href="#" class="twit">twitter</a>-->
 						<a href="#" class="fb">facebook</a>
-						<a href="#" class="vk">vkontakte</a>
+						<!--<a href="#" class="vk">vkontakte</a>-->
 					</div>
 					<h6>Контакты</h6>
 					<p class="adr">г.Астана, ул. Б.Момышулы,<br>
@@ -305,7 +305,7 @@
 				</div>
 			</div>
 			<div class="trepet trepet-dark">
-				<span>Разработано <br>с особым трепетом <a href="http://ginnova.kz"><img src="catalog/view/theme/default/img/mini-logo-gi.png" alt=""><img src="catalog/view/theme/default/img/mini-logo-gi-dark.png" alt=""></a></span>
+				<a href="http://ginnova.kz"><span>Разработано <br>с особым трепетом <img src="catalog/view/theme/default/img/mini-logo-gi.png" alt=""><img src="catalog/view/theme/default/img/mini-logo-gi-dark.png" alt=""></a></span>
 			</div>
 		</section>
             

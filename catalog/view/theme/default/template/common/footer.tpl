@@ -7,9 +7,13 @@
         
         <footer>
 			<div class="footer-menu footer-menu-dark footer-white clearfix">
-				    <div class="logo-footer logo-footer-dark logo-footer-white">
-				        <!--<img src="catalog/view/theme/default/img/logo-kapriz-dark.png" alt="Логотип цветочного бутика Kapriz">-->
-				    </div>
+                    
+                    <a href="index.php">
+                        <div class="logo-footer logo-footer-dark logo-footer-white">
+                            <!--<img src="catalog/view/theme/default/img/logo-kapriz-dark.png" alt="Логотип цветочного бутика Kapriz">-->
+                        </div>
+                    </a>
+				   
 				<div>
 					<h6>Меню</h6>
 					<ul>
@@ -38,8 +42,8 @@
 				</div>
 			</div>
 			<div class="under-footer under-footer-dark clearfix">
-				<div class="left-uf">www.ginnova.kz</div>
-                <div class="right-uf">Разработано с особым трепетом <span>|</span><a href="http://ginnova.kz"><img src="catalog/view/theme/default/img/mini-logo-gi.png" alt="Логотип lobal Innovations"></a></div>
+                <div class="left-uf"><a href="http://www.ginnova.kz">www.ginnova.kz</a></div>
+                <div class="right-uf"><a href="http://www.ginnova.kz">Разработано с особым трепетом <span>|</span><img src="catalog/view/theme/default/img/mini-logo-gi.png" alt="Логотип Global Innovations"></a></div>
 			</div>
 		</footer>
 	</div>

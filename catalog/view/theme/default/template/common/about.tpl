@@ -82,9 +82,9 @@
 			<p class="social">Мы в соц сетях</p>
 			<div class="social-block clearfix">
 				<a href="#" class="inst">instagram</a>
-				<a href="#" class="twit">twitter</a>
+				<!--<a href="#" class="twit">twitter</a>-->
 				<a href="#" class="fb">facebook</a>
-				<a href="#" class="vk">vkontakte</a>
+				<!--<a href="#" class="vk">vkontakte</a>-->
 			</div>
 			<h6>Контакты</h6>
 			<p class="adr">г.Астана, ул. Б.Момышулы,<br>
@@ -94,7 +94,7 @@
 			<a href="tel:+77172265050">+7(7172) 26 50 50</a>
 		</div>
 		<div class="trepet trepet-dark trepet-contacts">
-			<span>Разработано <br>с особым трепетом <a href="http://ginnova.kz"><img src="catalog/view/theme/default/img/mini-logo-gi.png" alt=""><img src="catalog/view/theme/default/img/mini-logo-gi-dark.png" alt=""></a></span>
+			<a href="http://ginnova.kz"><span>Разработано <br>с особым трепетом <img src="catalog/view/theme/default/img/mini-logo-gi.png" alt=""><img src="catalog/view/theme/default/img/mini-logo-gi-dark.png" alt=""></a></span>
 		</div>
 	</div>
 	

@@ -1,3 +1,25 @@
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix-1:before,
+.clearfix-1:after {
+	display: table;
+	content: " ";
+}
+.clearfix-1:after {
+	clear: both;
+}
+.footer-menu>a{
+    float: left;
+    margin-right: 114px;
+}
+.trepet a{
+    color: #fff;
+}
+.trepet-dark a{
+    color: #383838 !important;
+}
+.under-footer a{
+    color: #fff !important;
+}
 .slider__item__discount a{
     font-size: 16px;
     line-height: 20px;
@@ -14,6 +36,8 @@
 
 .product__more__info{
     border: 2px #fff solid;
+    border-radius: 25px;
+    padding: 5px;
 }
 
 .margin-top{
@@ -55,7 +79,7 @@
 }
 
 .button-back{
-    margin-top: 20px;
+    margin-top: 13px;
 }
 
 .button-back button{
@@ -416,11 +440,12 @@ button#list-view, button#grid-view{
 }
 
 .ui-slider-handle{
-    height: 5px  !important;
-    width: 5px  !important;
-    margin: 2.5px 0 0 0 !important;
+    height: 7px  !important;
+    width: 7px  !important;
+    margin: 1.5px 0 0 0 !important;
     border-radius: 100% !important;
     background: #E25082 !important;
+    cursor: pointer !important;
 }
 
 .ui-state-hover, .ui-state-focus, .ui-state-active{
@@ -440,6 +465,7 @@ button#list-view, button#grid-view{
     visibility: visible !important;
     border: 0px solid #fff !important;
     top: 10px !important;
+    cursor: pointer;
 }
 
 .ui-slider-tip:after{

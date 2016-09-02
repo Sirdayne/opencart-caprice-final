@@ -120,9 +120,11 @@
 						<a href="index.php?route=product/category&path=59" class="button button-dark" id="buttonx">подобрать букет</a>
 					</div>
 					<div class="block center">
+					    <a href="index.php">
 						<span class="logo-block logo-pink logo-white">
 						<!--<img src="catalog/view/theme/default/img/logo-pink.png" alt=""/>-->
 						</span>
+						</a>
 					</div>
 					<div class="block">
 						<address class="adress adress-dark adress-white">
@@ -137,8 +139,8 @@
 				<nav class="nav-fd nav-fd-white">
 					<ul>
 						<li><a href="index.php?route=common/about" id="navact-1">О компании</a></li>
-						<li><a class="dropdown-arrow" id="navact-2">Услуги</a>
-							<ul>
+						<li><a class="dropdown-arrow" id="navact-2">Услуги</a><div class="nav-hover"></div>		 
+							 <ul>
 								<li><a href="index.php?route=common/weddingdecoration">Свадебный декор</a></li>
 								<li><a href="index.php?route=common/photosession">Фотосессия</a></li>
 								<li><a href="index.php?route=common/datesdecoration">Оформление свиданий</a></li>
@@ -153,9 +155,11 @@
 			</div>
 			<div class="content-holder-mobile">
 				<div class="m-fir-header clearfix">
+                    <a href="index.php">
 					    <div class="m-logo-top m-logo-top-dark m-logo-top-white">
 					        <!--<img src="catalog/view/theme/default/img/logo-kapriz-dark.png" alt="">-->
 					    </div>
+                    </a>
 					<div class="m-rbox">
 						<a href="index.php?route=checkout/cart" class="m-basket m-basket-white"></a>
 						<a href="index.php?route=product/category&path=59" class="button button-dark button-bas-white">подобрать букет</a>
