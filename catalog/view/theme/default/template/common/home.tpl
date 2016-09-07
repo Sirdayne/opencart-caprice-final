@@ -28,17 +28,19 @@
 					<div class="bouquets__links-b">
 						<div class="bouquets__links">
 							<div class="top-blinks">
-								<div class="bouquets__link-b flower-select">
+								<div class="bouquets__link-b flower-select" id="js-pioni">
 									<span class="bouquets__link">пионы</span>
 								</div>
-								<div class="bouquets__link-b flower-select">
+								<div class="bouquets__link-b flower-select" id="js-rozi">
 									<span class="bouquets__link">розы</span>
 								</div>
-								<div class="bouquets__link-b flower-select">
-									<span class="bouquets__link">лилии</span>
+								<div class="bouquets__link-b flower-select" id="js-lilii">
+									<!--<span class="bouquets__link">лилии</span>-->
+									<span class="bouquets__link">гвоздики</span>
 								</div>
-								<div class="bouquets__link-b flower-select">
-									<span class="bouquets__link">ромашки</span>
+								<div class="bouquets__link-b flower-select" id="js-romashki">
+									<!--<span class="bouquets__link">ромашки</span>-->
+									<span class="bouquets__link">эустомы</span>
 								</div>
 							</div>
 							<div class="bot-blinks">
@@ -266,5 +268,7 @@
 
 		});
  </script>
+ 
+ <script type="text/javascript" src="catalog/view/theme/default/js/filters.js"></script>
 
 <?php echo $footer; ?>

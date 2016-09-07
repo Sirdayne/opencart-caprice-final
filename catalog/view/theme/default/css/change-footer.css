@@ -1,0 +1,12 @@
+.footer-white{
+    color: #FFF;
+    border-color: #FFF;
+    border-bottom: 0;
+}
+.footer-white a{
+    color: #FFF !important;
+}
+.logo-footer-white{
+    background: url(../img/logo-kapriz.png) center center no-repeat;
+    background-size: 100%;
+}
