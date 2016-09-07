@@ -44,17 +44,17 @@
 								</div>
 							</div>
 							<div class="bot-blinks">
-								<div class="bouquets__link-b bouquets__link-b--price price-select">
-									<span class="bouquets__link">до 5000 тг.</span>
+								<div class="bouquets__link-b bouquets__link-b--price price-select" id="js-filter-1">
+									<span class="bouquets__link">маме</span>
 								</div>
-								<div class="bouquets__link-b bouquets__link-b--price price-select">
-									<span class="bouquets__link">до 8000 тг.</span>
+								<div class="bouquets__link-b bouquets__link-b--price price-select" id="js-filter-2">
+									<span class="bouquets__link">девушке</span>
 								</div>
-								<div class="bouquets__link-b bouquets__link-b--price price-select">
-									<span class="bouquets__link">до 10000 тг.</span>
+								<div class="bouquets__link-b bouquets__link-b--price price-select" id="js-filter-3">
+									<span class="bouquets__link">на день рождения</span>
 								</div>
-								<div class="bouquets__link-b bouquets__link-b--price price-select">
-									<span class="bouquets__link">до 15000 тг.</span>
+								<div class="bouquets__link-b bouquets__link-b--price price-select" id="js-filter-4">
+									<span class="bouquets__link">шефу</span>
 								</div>
 							</div>
 						</div>
@@ -269,6 +269,6 @@
 		});
  </script>
  
- <script type="text/javascript" src="catalog/view/theme/default/js/filters.js"></script>
+ <script type="text/javascript" src="catalog/view/theme/default/js/filters-home.js"></script>
 
 <?php echo $footer; ?>

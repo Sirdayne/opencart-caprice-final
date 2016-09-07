@@ -352,13 +352,10 @@
 			$('.sec-menu').toggleClass('change-height');
 			$('.link-with-circle').toggleClass('circle-up');
 		});
-        
 	</script>
-    
-    <script type="text/javascript" src="catalog/view/theme/default/js/filters.js"></script>
-     
-    
    
+    
+    <script type="text/javascript" src="catalog/view/theme/default/js/filters-catalog.js"></script>
                    
 </body></html>
 

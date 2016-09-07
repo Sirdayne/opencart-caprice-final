@@ -74,3 +74,5 @@ $("#scale-slider")
 
 </script>
 
+<script type="text/javascript" src="catalog/view/theme/default/js/filters-catalog.js"></script>
+
