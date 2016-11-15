@@ -25,7 +25,9 @@ class ControllerCommonHeader extends Controller {
 		}
 
 		$data['title'] = $this->document->getTitle();
-
+        
+        $data['cart_total'] = $this->cart->countProducts();
+        
 		$data['base'] = $server;
 		$data['description'] = $this->document->getDescription();
 		$data['keywords'] = $this->document->getKeywords();

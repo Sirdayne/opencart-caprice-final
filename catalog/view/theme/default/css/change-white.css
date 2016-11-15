@@ -22,10 +22,6 @@
     color: #FFF !important;
 }
 
-.nav-fd-white>ul>li>ul>li>a:hover{
-    color: #E95386 !important;
-}
-
 .dropdown-arrow:after {
   border-left: 1px solid #fff !important;
   border-bottom: 1px solid #fff !important;
@@ -71,7 +67,9 @@ button.toggle-menu-white span, button.toggle-menu-white span:after, button.toggl
     color: #fff !important;
 }
 
-
+.nav-fd-white ul>li>a:before{
+    background: #fff !important;
+}
 
 .footer-white{
     color: #FFF;
@@ -84,4 +82,16 @@ button.toggle-menu-white span, button.toggle-menu-white span:after, button.toggl
 .logo-footer-white{
     background: url(../img/logo-kapriz.png) center center no-repeat;
     background-size: 100%;
+}
+
+.nav-fd-white ul>ul>li>a:before{
+    background: #fff !important;
+}
+
+.m-number-white{
+    background: #fff !important;
+    color: #E95386 !important;
+}
+.m-b-1, .m-b-2, .m-b-3{
+    background: #fff !important;
 }

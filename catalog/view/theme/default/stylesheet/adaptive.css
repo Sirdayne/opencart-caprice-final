@@ -1,8 +1,23 @@
+@media (max-height: 1000px) {
+    .catalog_more{
+        top: 100px !important;
+    }
+}
+
+@media (max-height: 700px) {
+    .catalog_more{
+        top: 50px !important;
+    }
+}
 
 @media (max-width: 1200px) {
  .pink-right-panel ul li{
         width: 49% !important;
         margin-bottom: 25px !important;
+    }
+    
+    .list-first-1, .list-first-2, .list-first-3, .desc-quantity{
+        margin-right: 0px;
     }
 }
 
@@ -14,12 +29,50 @@
     
 }
 
+@media (max-width: 900px) {
+    .catalog_more{
+        left: 0% !important;
+        width: 100%!important;
+        top: 25px !important;
+    }
+    .prod_image{
+        display: none;
+    }
+    .prod_image_mob{
+        display: block!important;
+    }
+    .prod_desc{
+        margin-top: 20px!important;
+        height: 220px!important;
+        text-align: center!important;
+    }
+    .prod_desc h1, .prod_desc h2{
+        margin-top: 5px !important;
+        margin-bottom: 5px !important;
+    }
+    .prod_stock{
+        display: none!important;
+    }
+    .button-cat{
+        margin-top: 25px!important;
+    }
+    
+}
 
 @media (max-width: 810px) {
-    .m-toptel {
-        margin: 10px 25px auto;
-        float: none;
+    .catalog_more{
+        top: 0px!important;
+        margin-top: -180px!important;
+        padding-top: 0px!imporant;
+        height: 150px !imporant;
     }
+    .catalog_prod{
+        height: 150px !imporant;
+    }
+    .catalog_close{
+        margin-top: 180px;
+    }
+    
     /*
     .slider-size{
         width: 80% !important;
@@ -50,6 +103,17 @@
         margin-bottom: 25px !important;
     }
     
+    .desc-input{
+        margin-right: 50%;
+    }
+    
+    .catalog_more{
+        left: 0% !important;
+        width: 100%!important;
+        top: 25px !important;
+    }
+    
+    
 }
 
  @media (max-width: 450px) {
@@ -65,4 +129,15 @@
     .col-custom{
         width: 100% !important;
     }
+     
+    .catalog_more{
+        left: 0% !important;
+        width: 100%!important;
+        top: 25px !important;
+    }
+    .row-edit input{
+        width: 200px;
+    }
+     
+     
 }

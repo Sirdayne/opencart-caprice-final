@@ -1,5 +1,78 @@
 <?php echo $header; ?>
 
+<link rel="stylesheet" href="catalog/view/theme/default/swiper/css/swiper.min.css">
+    	
+<link rel="stylesheet" href="catalog/view/theme/default/stylesheet/my_swiper.css">
+        
+   
+<div class="modal-back"></div>
+
+<!-- SLIDER IN CATALOG -->
+<div class="catalog_more swiper-container">
+    <div class="swiper-wrapper">       
+        <?php foreach ($products as $product) { ?>
+        <div class="catalog_prod swiper-slide">
+           <!--
+            <div class="product-thumb product-thumb-border" style="background: url(<?php echo $product['thumb']; ?>) center center no-repeat !important; background-size: 100% 100% !important;">
+            -->
+            <!-- Image of Product in Catalog Картинка товара в каталоге букеты
+            <div class="image image-abs"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive" /></a></div>
+            -->
+            <div class="prod_image">
+                <img src="<?php echo $product['thumb']; ?>" alt="">
+            </div>
+              
+            <div class="prod_desc">
+                
+                <!--<p><?php echo $product['description']; ?></p>-->
+                <h1><?php echo $product['description']; ?>&nbsp<?php echo $product['name']; ?></h1>
+                
+                <div class="prod_image_mob">
+                    <img src="<?php echo $product['thumb']; ?>" alt="">
+                </div>
+                <div class="prod_stock">
+                    <p><img src="catalog/view/theme/default/img/catalog_slider_tick.png" alt="">ЕСТЬ В НАЛИЧИИ</p>
+                    <p><img src="catalog/view/theme/default/img/catalog_slider_car.png" alt="">ДОСТАВКА 1000ТГ</p>
+                </div>
+                
+                <?php if ($product['price']) { ?>
+                    <h2>
+                          <?php if (!$product['special']) { ?>
+                          <?php echo $product['price']; ?>
+                          <?php } else { ?>
+                          <?php echo $product['special']; ?>
+                          <?php } ?>
+                          <?php if ($product['tax']) { ?>
+                          <?php echo $text_tax; ?> <?php echo $product['tax']; ?>
+                          <?php } ?>
+                    </h2>
+                <?php } ?>
+                
+                <div class="button-cat">
+                    <button class="" type="button" onclick="cart.add('<?php echo $product['product_id']; ?>', '<?php echo $product['minimum']; ?>');">
+                        купить букет
+                    </button>
+                </div> 
+                <a href="index.php?route=checkout/cart">
+                    <div class="button-bas">
+                        <button class="" type="button">
+                            в корзину
+                        </button>
+                    </div> 
+                </a>
+                <p class="added-basket">добавлено в корзину</p>
+            </div>
+             
+          </div>
+        <?php } ?>
+    </div>
+    
+    <div class="swiper-button-next" style="right: 80px;"></div>
+    <div class="swiper-button-prev" style="left: 80px;"></div>
+    <div class="catalog_close"></div>
+</div>
+<!-- SLIDER IN CATALOG -->
+
 <div class="container margin-top">
   <ul class="breadcrumb">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
@@ -94,10 +167,13 @@
         </div>
       </div>-->
       <br />
+      
+      
+    <!-- ВСЕ ТОВАРЫ ВЫВОДЯТСЯ ЗДЕСЬ -->
      <div class="row">
         <?php foreach ($products as $product) { ?>
         <div class="product-layout col-lg-4 col-md-4 col-sm-6 col-xs-6 col-custom">
-          <div class="product-thumb product-thumb-border" style="background: url(<?php echo $product['thumb']; ?>) center center no-repeat !important; background-size: 100% !important;">
+          <div class="product-thumb product-thumb-border" style="background: url(<?php echo $product['thumb']; ?>) center center no-repeat !important; background-size: 100% 100% !important;">
            <!-- Image of Product in Catalog Картинка товара в каталоге букеты
            <div class="image image-abs"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive" /></a></div>
            -->
@@ -106,7 +182,12 @@
               
               <div class="caption caption-gradient text-align-product">
                
-                <div class="product__more"><a href="<?php echo $product['href']; ?>" class="product__more__info">&nbsp ПОДРОБНЕЕ &nbsp</a></div>
+                <div class="product__more">
+                    <!--<a href="<?php echo $product['href']; ?>" class="product__more__info">-->
+                    <a class="product__more__info">
+                        &nbsp ПОДРОБНЕЕ &nbsp
+                    </a> 
+                </div>
                 
                 <p class=""><?php echo $product['description']; ?></p>
                 <h4><?php echo $product['name']; ?></h4>
@@ -148,8 +229,8 @@
         <?php } ?>
       </div>
       <div class="row">
-        <div class="col-sm-6 text-right"><?php echo $pagination; ?></div>
-        <div class="col-sm-6 text-right"><?php echo $results; ?></div>
+        <div class="col-sm-12 cat-pagination"><?php echo $pagination; ?></div>
+        <div class="col-sm-12 cat-results"><?php echo $results; ?></div>
       </div>
       <?php } ?>
       <?php if (!$categories && !$products) { ?>
@@ -164,15 +245,15 @@
 
         <section class="how-find how-find-dark">
 			
-			<div class="find-wrapper clearfix">
+			<div class="find-wrapper clearfix-1">
 				
 				<div class="m-footer-contacts m-footer-contacts-dark">
 					<p class="social">Мы в соц сетях</p>
-					<div class="social-block clearfix">
-						<a href="#" class="inst">instagram</a>
-						<a href="#" class="twit">twitter</a>
-						<a href="#" class="fb">facebook</a>
-						<a href="#" class="vk">vkontakte</a>
+					<div class="social-block clearfix-1">
+						<a href="https://www.instagram.com/kapriz_flowers/" class="inst" target="_blank">instagram</a>
+						<!--<a href="#" class="twit">twitter</a>-->
+						<a href="https://www.facebook.com/pages/%D0%91%D1%83%D1%82%D0%B8%D0%BA-%D0%A6%D0%B2%D0%B5%D1%82%D0%BE%D0%B2-kapriz/999459183428910" class="fb" target="_blank">facebook</a>
+						<!--<a href="#" class="vk">vkontakte</a>-->
 					</div>
 					<h6>Контакты</h6>
 					<p class="adr">г.Астана, ул. Б.Момышулы,<br>
@@ -341,7 +422,44 @@
 		</footer>
     </div>
 
+    <script>
+        $('.product__more__info').click(function() {
+            
+            
+            var clicked = $('.product__more__info').index( this );
+            
+            clicked++;
+            
+            $('.modal-back').fadeIn('fast');
+            $('.catalog_more').fadeIn('fast');
+            $('.catalog_more').css('visibility','visible');    
+            
+            swiper.slideTo(clicked, 0);
+        });
+        
+        $('.modal-back, .catalog_close').click(function() {
+            $('.modal-back').fadeOut('fast');
+            $('.catalog_more').fadeOut('fast');
+        });
+        
+        
+        if ($(window).width() < 1000) {
+            $('.product-thumb').click(function() {
 
+
+                var clicked = $('.product-thumb').index( this );
+
+                clicked++;
+
+                $('.modal-back').fadeIn('fast');
+                $('.catalog_more').fadeIn('fast');
+                $('.catalog_more').css('visibility','visible');    
+
+                swiper.slideTo(clicked, 0);
+            });
+        }
+        
+    </script>
 
     <script type="text/javascript">
 		$('.m-toggle-menu').click(function() {
@@ -352,10 +470,37 @@
 			$('.sec-menu').toggleClass('change-height');
 			$('.link-with-circle').toggleClass('circle-up');
 		});
+        
+        
 	</script>
    
     
     <script type="text/javascript" src="catalog/view/theme/default/js/filters-catalog.js"></script>
+                  
+    <!-- Swiper JS -->
+    <script src="catalog/view/theme/default/swiper/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 1,
+        spaceBetween: 0,
+        loop: true
+    });
+        
+    $('.catalog_more').fadeOut(10);
+    </script>
+    
+    <script>
+        
+        if ( $('.pagination').children().text == '>' ){
+            alert( $(this) );
+        }
+        
+    </script>
+    
                    
 </body></html>
 

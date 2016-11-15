@@ -269,10 +269,10 @@
 				<div class="left-find">
 					<div class="how-img-1"><img src="catalog/view/theme/default/img/howfind-1-pink.jpg" alt=""></div>
 					<div class="how-img-2"><img src="catalog/view/theme/default/img/howfind-2.jpg" alt="">
-						<div>#KAPRIZ_FLOWERS<br><a href="#">подписаться</a></div>
+						<div>#KAPRIZ_FLOWERS<br><a href="https://www.instagram.com/explore/tags/kapriz_flowers/" target="_blank">подписаться</a></div>
 					</div>
 					<div class="how-img-3"><img src="catalog/view/theme/default/img/howfind-3.jpg" alt="">
-						<div>#KAPRIZ_FLOWERS<br><a href="#">подписаться</a></div>
+						<div>#KAPRIZ_FLOWERS<br><a href="https://www.instagram.com/explore/tags/kapriz_flowers/" target="_blank">подписаться</a></div>
 					</div>
 				</div>
 				<div class="right-find">
@@ -282,18 +282,18 @@
 					<p class="kruglosut">круглосуточно <br>TVOY@KAPRIZ-ASTANA.COM</p>
 					<p class="social">Мы в соц сетях</p>
 					<div class="social-block clearfix">
-						<a href="#" class="inst">instagram</a>
+						<a href="https://www.instagram.com/kapriz_flowers/" class="inst" target="_blank">instagram</a>
 						<!--<a href="#" class="twit">twitter</a>-->
-						<a href="#" class="fb">facebook</a>
+						<a href="https://www.facebook.com/pages/%D0%91%D1%83%D1%82%D0%B8%D0%BA-%D0%A6%D0%B2%D0%B5%D1%82%D0%BE%D0%B2-kapriz/999459183428910" class="fb" target="_blank">facebook</a>
 						<!--<a href="#" class="vk">vkontakte</a>-->
 					</div>
 				</div>
 				<div class="m-footer-contacts m-footer-contacts-dark">
 					<p class="social">Мы в соц сетях</p>
 					<div class="social-block clearfix">
-						<a href="#" class="inst">instagram</a>
+						<a href="https://www.instagram.com/kapriz_flowers/" class="inst" target="_blank">instagram</a>
 						<!--<a href="#" class="twit">twitter</a>-->
-						<a href="#" class="fb">facebook</a>
+						<a href="https://www.facebook.com/pages/%D0%91%D1%83%D1%82%D0%B8%D0%BA-%D0%A6%D0%B2%D0%B5%D1%82%D0%BE%D0%B2-kapriz/999459183428910" class="fb" target="_blank">facebook</a>
 						<!--<a href="#" class="vk">vkontakte</a>-->
 					</div>
 					<h6>Контакты</h6>

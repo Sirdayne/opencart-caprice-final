@@ -69,6 +69,41 @@ $("#scale-slider")
     });
       
         $('.ui-slider-tip').show();
+      
+    /* VREMYA SPAGHETTI-KODA PRIWLO */  
+    function changeRangePriceFilter() {  
+          priceRange = [];
+            $('#scale-slider .ui-slider-tip').each(function(){
+                priceRange.push($(this).html());
+            }); 
+
+            $('.<?php echo $product_class; ?>').hide();
+            $('.clearfix').remove();
+            $('.<?php echo $product_class; ?>').each(function(){
+                if( $(this).find( ".price span.price-new" ).length ) {
+                    var price = $(this).find( ".price span.price-new" ).html().replace('<?php echo $price_code; ?>','').replace(',','');
+                } else {
+                    var text = $(this).find('.price').html().replace('<?php echo $price_code; ?>','');
+                    if( $(this).find( ".price span" ).length ) {
+                        var price = text.substring(0,text.indexOf('<span')).replace(',','');
+                    } else {
+                        var price = text.replace(',','');
+                    }
+
+                }	
+                price = parseInt(price);
+                if( !isNaN(price) && (price >= priceRange[0] && price <= priceRange[1]) ){
+                    $(this).show();
+                }
+            });
+    }
+    if ($(window).width() < 1000) {
+        window.setInterval(function(){
+            changeRangePriceFilter();
+        }, 300); 
+    }
+      
+      
   });
 })(jQuery);
 

@@ -50,13 +50,16 @@
   <?php foreach ($products as $product) { ?>
   <div class="slider__item">
     <div class="">
-      <div class="image"><a href="<?php echo $product['href']; ?>">
-      <img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive slider__item__img" />
-      </a></div>
+      <div class="image">
+         <!--<a href="<?php echo $product['href']; ?>">-->
+              <img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive slider__item__img" />
+          <!--</a> -->
+      </div>
       <!--<div class="caption">-->
        <div class="slider__item__discount slider-padding animated zoomInLeft">
-       <p>акция на букет</p>
-        <h3><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></h3>
+       <p>букет</p>
+         <!--<h3><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></h3>-->
+        <h3><?php echo $product['name']; ?></h3>
      <!--     <p><?php echo $product['description']; ?></p> 
       <?php if ($product['rating']) { ?>
         <div class="rating">
@@ -82,14 +85,15 @@
         </p>
         <?php } ?>
       </div>
-      <!--<div class="button-group">
-        <button type="button" onclick="cart.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $button_cart; ?></span></button>
+      <div class="button-group">
+        <button class="slider-flower-button" type="button" onclick="cart.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $button_cart; ?></span></button>
+        <!--
         <button type="button" data-toggle="tooltip" title="<?php echo $button_wishlist; ?>" onclick="wishlist.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-heart"></i></button>
-        <button type="button" data-toggle="tooltip" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-exchange"></i></button>
-      </div>-->
-      <!--
+        <button type="button" data-toggle="tooltip" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-exchange"></i></button> -->
+      </div>
+      
     
-      -->
+     
       
       
       <div class="composition-b">
@@ -119,4 +123,15 @@
   </div>
   <?php } ?>
 </div>
+
+<div class="slider-buy">
+    <button class="button slider-buy-button" type="button" onclick="cart.add('<?php echo $product['product_id']; ?>');" ><p>Купить</p></button>
+    <p id="added-basket">добавлено в корзину</p>
+</div>
+
+
+
+
+
+
 

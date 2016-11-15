@@ -15,7 +15,7 @@
     .header-picture-desc:after { width: 359px; height: 341px;}
     .photosession-picture {height: 630px;background-size:925px;}
     .header-picture .hpd-3 { width: 372px; height: 362px;}
-    .datedecor-picture {
+    .datedecor-picture, .newdecor-picture {
         background-position: -88px -42px;
         background-size: 988px;
         height: 550px;
@@ -71,7 +71,7 @@
     .white-wrapper .content-holder nav>ul>li {margin-right: 72px;}
     .header-picture { width: 600px;}
     .header-picture .hpd-4 { padding-top: 60px;}
-    .header-picture-desc {width: 280px;height: 200px;}
+    .header-picture-desc {width: 280px;height: 200px;min-height: 0px;}
     .header-picture-desc:after { width:259px; height: 179px;}
     .header-picture-desc p { display: none;}
     .wedding-picture { -webkit-background-size: 570px; background-size: 570px; height: 430px;}
@@ -95,7 +95,7 @@
         height: 254px;
         padding: 71px 0 20px 38px;
     }
-    .datedecor-picture {
+    .datedecor-picture, .newdecor-picture {
         background-position: -88px -42px;
         background-size: 750px;
         height: 410px;
@@ -128,11 +128,21 @@
         margin: 0 0 50px 0;
     }
     .delivery-pics-wrapper {width: 250px;}
+    #cart-pull-right{
+        margin-bottom: 50px;
+        text-align: center;
+        width: 100%;
+    }
+    #cart-pull-right .button{
+        float: none;
+        display: block;
+        margin: auto;
+    }
 }
 @media (max-width: 810px) {
     /*Для страниц с белой подложкой*/
     .white-wrapper .content-holder {display: none;}
-    .white-wrapper .content-holder-mobile, .dark .m-menu, .dark .m-toggle-menu {display: block;}
+    
     .white-wrapper { margin: 10px 5px;}
     .a-item {
         width: 80%;
@@ -140,8 +150,10 @@
         margin: 0 auto 8%;
     }
     .a-item:nth-child(even) { margin: 0 auto 5%;}
-}
-@media (max-width: 767px) {
+/*}
+@media (max-width: 767px) {*/
+    .white-wrapper .content-holder-mobile, .dark .m-menu, .dark .m-toggle-menu {display: block;}
+    
     .content-holder {display: none;}
     .content-holder-mobile, .m-menu, .m-toggle-menu {display: block;}
     .slider {height:400px;margin-top: 40px;}
@@ -174,6 +186,7 @@
     }
     .bouquets__title { font-size: 22px;}
     .bouquets__title-big { font-size: 50px;}
+    .bouquets__title-big h2 { font-size: 50px;}
     .services { width: 350px;}
     .block1, .block2, .block3, .block4 {margin: 0 0 50px 0;}
 
@@ -215,6 +228,11 @@
     .outer-text { display: block;}
     .main img { display: none;}
     .main img[src*='dinara'] { display: block;}
+    
+    /* svg and boxes break mobile version */
+    .wrapper{
+        overflow: hidden;
+    }
 }
 
 @media (max-width: 700px) {
@@ -234,7 +252,7 @@
     .trepet-dark img[src*=dark] {display: block;}
     .photosession-picture {height: 290px;background-size: 420px;}
     .header-picture .hpd-3 { width: 188px; height: 181px; padding-top: 70px;}
-    .datedecor-picture {
+    .datedecor-picture, .newdecor-picture {
         background-position: -88px -42px;
         background-size: 542px;
         height: 290px;
@@ -262,7 +280,7 @@
 
 @media (max-width: 599px) {
     .composition-b {left: calc(50% - 125px);top: 310px;}
-    .slider__item__discount {left:20%;top:130px;}
+    .slider__item__discount {left:20%;top:70px;}
     .composition {
         float: left;
         margin: 0;
@@ -362,17 +380,18 @@
 }
 
 @media (max-width: 450px) {
-    .m-logo-top { margin: 10px 0 0 10px; }
-    .m-rbox { margin: 10px 0 0 0; }
-    .slider__prev, .slider__next { display: none !important; }
-    .m-basket {
+    .slider__item__discount {left:10%;top:70px;}
+    /*.m-logo-top { margin: 10px 0 0 10px; }*/
+    /*.m-rbox { margin: 10px 0 0 0; }*/
+    /*.slider__prev, .slider__next { display: none !important; }*/
+    /*.m-basket {
         display: block;
         margin: 0 auto 5px;
         position: relative;
         top: auto;
-    }
-    .m-rbox { width: 172px; }
-    .m-toptel {
+    }*/
+    /*.m-rbox { width: 172px; }*/
+    /*.m-toptel {
         padding-left: 0;
         background: none !important;
         margin: 10px auto;
@@ -382,14 +401,25 @@
         width: 105px;
         display: block;
         margin: 10px auto 0;
+    }*/
+    .product-layout{
+        width: 80% !important;
+        margin-left: 10% !important;
+    }
+    svg{
+        display: none !important;
+    }
+    .new-box{
+        display: none;
     }
     .bouquets-b { padding: 50px 0;}
-    .bouquets__link { font-size: 14px;}
+    .bouquets__link { font-size: 12px;}
     .bouquets__links { justify-content: space-around;}
     .bouquets__link-b { width: 120px;}
     .bouquets__links-b { width: 100%;}
     .bouquets__title { font-size: 18px;}
     .bouquets__title-big { font-size: 30px;}
+    .bouquets__title-big h2 { font-size: 30px;}
     .services {width:100%;}
     .services__item {
         width:100%;
@@ -415,7 +445,6 @@
     }
 
     /*Для страниц с белой подложкой*/
-    .m-fir-header {padding-bottom: 20px;}
     .wedding-picture {background-size: 240px;height:180px;}
     .wedding-picture div {height: 157px;}
     .header-picture { width: 277px;}
@@ -480,7 +509,7 @@
         padding-left: 30px;
         height: 181px;
     }
-    .datedecor-picture {
+    .datedecor-picture, .newdecor-picture {
         background-position: -200px -42px;
         background-size: 484px;
         height: 250px;
@@ -497,10 +526,43 @@
     .map-border {padding:0;height: auto;}
     .md-trigger {margin-bottom: 10px;}
     .md-modal { width: 100%;top:0;}
-    .md-content { padding: 15px;}
+    .md-content { padding: 55px 15px 15px;}
     .consult-modal {width: 280px!important;}
     .delivery-info {width: 100%;}
     .delivery-info p {font-size: 14px;}
     .outer-text h3 { font-size: 20px;}
     .about-wrapper { width: 100%;}
+}
+
+@media (max-width: 395px) {
+    .m-logo-wrapper{
+        width: calc(100% - 250px);
+    }
+    .m-burger{
+        margin-left: 5px;
+    }
+    .b-menu{
+        left: 15px;
+    }
+    .m-basket {
+        margin-left: 10px;
+        margin-right: 25px;
+    }
+    .m-toptel {
+        width: 100px;
+        margin-right: 5px;
+        padding-left: 20px;
+    }
+    .m-toptel a{
+        font-size: 14px;
+    }
+}
+@media (max-width: 370px) {
+    .m-logo-top{
+        width: 45px;
+        height: 45px;
+    }
+    .m-logo-wrapper{
+        margin-top: 13px;
+    }
 }

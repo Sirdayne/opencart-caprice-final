@@ -6,7 +6,7 @@
 	</div>
         
         <footer>
-			<div class="footer-menu footer-menu-dark footer-white clearfix">
+			<div class="footer-menu footer-menu-dark footer-white clearfix-1">
                     
                     <a href="index.php">
                         <div class="logo-footer logo-footer-dark logo-footer-white">
@@ -41,7 +41,7 @@
 					<span>8 (7172) 265050</span>
 				</div>
 			</div>
-			<div class="under-footer under-footer-dark clearfix">
+			<div class="under-footer under-footer-dark clearfix-1">
                 <div class="left-uf"><a href="http://www.ginnova.kz">www.ginnova.kz</a></div>
                 <div class="right-uf"><a href="http://www.ginnova.kz">Разработано с особым трепетом <span>|</span><img src="catalog/view/theme/default/img/mini-logo-gi.png" alt="Логотип Global Innovations"></a></div>
 			</div>
@@ -60,9 +60,24 @@
 			$('.link-with-circle').toggleClass('circle-up');
 		});
         
+       
+        
 	</script>
-     
-    
    
+     <script>
+    
+         $(document).ready(function(){ 
+		
+            if ($(window).width() < 1000) {
+                
+                $('#navact-2, .nav-hover').click(function() {
+
+                   $('.nav-fd-before').fadeIn('500');
+                    
+                });
+
+            }
+        });
+    </script>
                    
 </body></html>

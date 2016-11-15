@@ -25,7 +25,7 @@
 <?php } ?>
 <p><strong><?php echo $text_comments; ?></strong></p>
 <p>
-  <textarea name="comment" rows="8" class="form-control"><?php echo $comment; ?></textarea>
+  <textarea name="comment" rows="8" class="form-control" placeholder="Добавьте окрытку словами ''Моей любимой девушке'' и мы добавим открытку к букету совершенно бесплатно!"><?php echo $comment; ?></textarea>
 </p>
 <div class="buttons">
   <div class="pull-right">

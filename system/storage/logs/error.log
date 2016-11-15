@@ -505,3 +505,22 @@
 2016-09-04 13:13:13 - PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in D:\xampp\htdocs\opencart\system\library\image.php on line 118
 2016-09-04 13:13:13 - PHP Warning:  imagedestroy() expects parameter 1 to be resource, boolean given in D:\xampp\htdocs\opencart\system\library\image.php on line 119
 2016-09-04 13:13:38 - PHP Warning:  imagejpeg(D:\xampp\htdocs\opencart/image/cache/catalog/wedding_decor/wedding_decor__15-800x533.jpg): failed to open stream: Permission denied in D:\xampp\htdocs\opencart\system\library\image.php on line 64
+2016-09-29 5:51:16 - PHP Notice:  Undefined variable: product in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\category.tpl on line 6
+2016-09-29 5:51:16 - PHP Notice:  Undefined variable: product in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\category.tpl on line 8
+2016-09-29 5:51:16 - PHP Notice:  Undefined variable: product in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\category.tpl on line 9
+2016-09-29 5:51:16 - PHP Notice:  Undefined variable: product in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\category.tpl on line 11
+2016-09-29 5:51:16 - PHP Notice:  Undefined variable: product in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\category.tpl on line 22
+2016-09-29 5:51:16 - PHP Notice:  Undefined variable: product in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\category.tpl on line 35
+2016-09-29 5:51:16 - PHP Notice:  Undefined variable: product in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\category.tpl on line 35
+2016-09-29 5:51:16 - PHP Notice:  Undefined variable: product in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\category.tpl on line 36
+2016-09-29 5:51:16 - PHP Notice:  Undefined variable: product in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\category.tpl on line 37
+2016-09-29 5:51:16 - PHP Notice:  Undefined variable: product in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\category.tpl on line 38
+2016-10-04 10:30:42 - PHP Notice:  Undefined variable: text_items in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\common\header.tpl on line 165
+2016-10-04 10:31:56 - PHP Notice:  Undefined variable: cart_count in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\common\header.tpl on line 165
+2016-10-04 10:31:58 - PHP Notice:  Undefined variable: cart_count in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\common\header.tpl on line 165
+2016-10-04 10:34:21 - PHP Notice:  Indirect modification of overloaded property ControllerCommonHeader::$data has no effect in D:\xampp\htdocs\opencart\catalog\controller\common\header.php on line 145
+2016-10-04 10:34:21 - PHP Notice:  Undefined variable: cart_total in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\common\header.tpl on line 165
+2016-10-04 10:35:12 - PHP Notice:  Indirect modification of overloaded property ControllerCommonHeader::$data has no effect in D:\xampp\htdocs\opencart\catalog\controller\common\header.php on line 9
+2016-10-04 10:35:12 - PHP Notice:  Undefined variable: cart_total in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\common\header.tpl on line 165
+2016-10-04 10:35:17 - PHP Notice:  Undefined variable: cart_total in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\common\header.tpl on line 165
+2016-10-04 10:35:20 - PHP Notice:  Undefined variable: cart_total in D:\xampp\htdocs\opencart\catalog\view\theme\default\template\common\header.tpl on line 165

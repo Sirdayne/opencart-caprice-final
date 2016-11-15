@@ -4,15 +4,13 @@
 	    left: 20% !important;
 	    width: 60% !important;
         padding: 2% !important;
-       
+        border: none !important;
     }
-    /*
+    
 	.deny-1, .deny-2, .deny-3, .deny-4, .deny-5, .deny-6 {
-        display: block !important;
-		top:5px !important;
-    	right:5px !important;
+		top:20px !important;
+    	right:20px !important;
 	}
-    */
 }
 
 @media screen and (max-width: 450px) {
@@ -21,9 +19,13 @@
 	    left: 10% !important;
 	    width: 80% !important;
         padding: 1% !important;
-       
+        border: none !important;
     }
     
+    .deny-1, .deny-2, .deny-3, .deny-4, .deny-5, .deny-6 {
+		top:10px !important;
+    	right:10px !important;
+	}
     
 }
 
@@ -40,12 +42,11 @@
     display: none;
     top: 35%;
     left: 35%;
-    
     width: 30%;
-    
+    border: 2px solid #E25082;
+    border-radius: 10px;
     z-index: 100;
-    
-    background: #FFF;
+    overflow: hidden;
 }
 
 .modal-1 button, .modal-2 button, .modal-3 button, .modal-4 button, .modal-5 button, .modal-6 button	{
@@ -67,16 +68,15 @@
     z-index: 10;
 }
 
-/*
+
 .deny-1, .deny-2, .deny-3, .deny-4, .deny-5, .deny-6 {
     position: absolute;
-    display: none;
 
     height: 30px;
     width: 30px;
     
-    top: 0;
-    right:0;
+    top: 5px;
+    right: 5px;
 
     z-index: 4;
     background: url("../img/cancel.png") center center no-repeat;
@@ -87,4 +87,3 @@
 .deny-1:hover, .deny-2:hover, .deny-3:hover, .deny-4:hover, .deny-5:hover, .deny-6:hover{
 	cursor: pointer;
 }
-*/

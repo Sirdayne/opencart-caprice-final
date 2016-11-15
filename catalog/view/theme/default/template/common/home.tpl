@@ -1,6 +1,6 @@
 <?php echo $header; ?>
         
-        <script type="text/javascript" src="catalog/view/theme/default/js/jquery.min.js"></script>
+        <!--<script type="text/javascript" src="catalog/view/theme/default/js/jquery.min.js"></script>-->
 	    <script type="text/javascript" src="catalog/view/theme/default/js/slick.min.js"></script>
         <link rel="stylesheet" href="catalog/view/theme/default/css/change-white.css"> 
         
@@ -24,7 +24,7 @@
 			<div class="bouquets-b">
 				<div class="bouquets block-in">
 					<div class="bouquets__title">выберите восхитительные букеты для:</div>
-					<div class="bouquets__title-big">Свиданий</div>
+					<div class="bouquets__title-big"><h2 id="typed"></h2></div>
 					<div class="bouquets__links-b">
 						<div class="bouquets__links">
 							<div class="top-blinks">
@@ -157,10 +157,10 @@
 				<div class="left-find">
 					<div class="how-img-1"><img src="catalog/view/theme/default/img/howfind-1.jpg" alt=""></div>
 					<div class="how-img-2"><img src="catalog/view/theme/default/img/howfind-2.jpg" alt="">
-						<div>#KAPRIZ_FLOWERS<br><a href="#">подписаться</a></div>
+						<div>#KAPRIZ_FLOWERS<br><a href="https://www.instagram.com/explore/tags/kapriz_flowers/" target="_blank">подписаться</a></div>
 					</div>
 					<div class="how-img-3"><img src="catalog/view/theme/default/img/howfind-3.jpg" alt="">
-						<div>#KAPRIZ_FLOWERS<br><a href="#">подписаться</a></div>
+						<div>#KAPRIZ_FLOWERS<br><a href="https://www.instagram.com/explore/tags/kapriz_flowers/" target="_blank">подписаться</a></div>
 					</div>
 				</div>
 				<div class="right-find">
@@ -170,19 +170,19 @@
 					<p class="kruglosut">круглосуточно <br>TVOY@KAPRIZ-ASTANA.COM</p>
 					<p class="social">Мы в соц сетях</p>
 					<div class="social-block clearfix">
-						<a href="#" class="inst">instagram</a>
+						<a href="https://www.instagram.com/kapriz_flowers/" class="inst" target="_blank">instagram</a>
 						<!--<a href="#" class="twit">twitter</a>-->
-						<a href="#" class="fb">facebook</a>
-						<a href="#" class="vk">vkontakte</a>
+						<a href="https://www.facebook.com/pages/%D0%91%D1%83%D1%82%D0%B8%D0%BA-%D0%A6%D0%B2%D0%B5%D1%82%D0%BE%D0%B2-kapriz/999459183428910" class="fb" target="_blank">facebook</a>
+						<!--<a href="#" class="vk">vkontakte</a>-->
 					</div>
 				</div>
 				<div class="m-footer-contacts">
 					<p class="social">Мы в соц сетях</p>
 					<div class="social-block clearfix">
-						<a href="#" class="inst">instagram</a>
+						<a href="https://www.instagram.com/kapriz_flowers/" class="inst" target="_blank">instagram</a>
 						<!--<a href="#" class="twit">twitter</a>-->
-						<a href="#" class="fb">facebook</a>
-						<a href="#" class="vk">vkontakte</a>
+						<a href="https://www.facebook.com/pages/%D0%91%D1%83%D1%82%D0%B8%D0%BA-%D0%A6%D0%B2%D0%B5%D1%82%D0%BE%D0%B2-kapriz/999459183428910" class="fb" target="_blank">facebook</a>
+						<!--<a href="#" class="vk">vkontakte</a>-->
 					</div>
 					<h6>Контакты</h6>
 					<p class="adr">г.Астана, ул. Б.Момышулы,<br>
@@ -213,16 +213,17 @@
 			infinite: true,
 			slidesToShow: 3,
 			slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
 			centerMode: true,
 			prevArrow: "<button class='slider__prev'></button>",
 			nextArrow: "<button class='slider__next'></button>",
-			dots: true,
 			responsive: [
 				{
 					breakpoint: 600,
 					settings: {
 						slidesToShow: 1,
-						dots: false
+						dots: true
 					}
 				}
 			]
@@ -270,5 +271,62 @@
  </script>
  
  <script type="text/javascript" src="catalog/view/theme/default/js/filters-home.js"></script>
+ 
+ <script type="text/javascript" src="catalog/view/theme/default/js/typed.js"></script>
+ <script>
+    $(function () {
+        $("#typed").typed({
+            strings: ["Свиданий", "", "Свадьбы", "Дня рождения", "Девушки", "Мамы", "Шефа"],
+            typeSpeed: 50,
+            backSpeed: 10,
+            startDelay: 100,
+            backDelay: 800,
+            loop: true,
+            loopCount: false,
+        })
+    });
+</script>
+
+<script>
+    $(document).ready(function() {
+        
+        var priceNew = $('.price-new');
+        
+        console.log(priceNew.length);
+        
+        for (var i = 0; i < priceNew.length; i++) {
+            
+            var subStr = $('.price-new').eq(i).html();
+            
+            var subFirst = subStr.substring(0,2);
+            var subSecond = subStr.substr(2,5);
+            
+            subStr = subFirst + ' ' + subSecond;
+            
+            $('.price-new').eq(i).html(subStr);
+            
+        }
+        
+        
+    });
+</script>
+
+<script>
+    $(document).ready(function() {
+        
+        var link = $('.slick-center button').attr('onclick');
+            
+        $('.slider-buy button').attr("onclick", link);  
+        
+        
+        //$('body').on('click','.slick-arrow',function(){
+        $('.slider__item').bind('DOMSubtreeModified', function(e) {
+            
+            link = $('.slick-center button').attr('onclick');
+            
+            $('.slider-buy button').attr("onclick", link);  
+        });
+    });
+</script>
 
 <?php echo $footer; ?>

@@ -159,6 +159,9 @@ var cart = {
 					}, 100);
 
 					$('html, body').animate({ scrollTop: 0 }, 'slow');
+                    
+                    $('#added-basket').fadeIn(200).delay(900).fadeOut(200);
+                    $('.added-basket').fadeIn(100).delay(500).fadeOut(100);
 
 					$('#cart > ul').load('index.php?route=common/cart/info ul li');
 				}
@@ -285,6 +288,7 @@ var wishlist = {
 				$('#wishlist-total').attr('title', json['total']);
 
                 $('html, body').animate({ scrollTop: 0 }, 'slow');
+                
 			},
 	        error: function(xhr, ajaxOptions, thrownError) {
 	            alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
@@ -312,6 +316,7 @@ var compare = {
 					$('#compare-total').html(json['total']);
 
 					$('html, body').animate({ scrollTop: 0 }, 'slow');
+                    
 				}
 			},
 	        error: function(xhr, ajaxOptions, thrownError) {

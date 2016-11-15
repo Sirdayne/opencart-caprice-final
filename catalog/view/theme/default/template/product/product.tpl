@@ -125,33 +125,33 @@
         <?php if ($column_left || $column_right) { ?>
         <?php $class = 'col-sm-6'; ?>
         <?php } else { ?>
-        <?php $class = 'col-sm-2'; ?>
+        <?php $class = 'col-sm-3'; ?>
         <?php } ?>
-        <div class="<?php echo $class; ?> desc-row">
+        <div class="<?php echo $class; ?> desc-main">
           <div class="btn-group">
             <!--<button type="button" data-toggle="tooltip" class="btn btn-default" title="<?php echo $button_wishlist; ?>" onclick="wishlist.add('<?php echo $product_id; ?>');"><i class="fa fa-heart"></i></button>
             <button type="button" data-toggle="tooltip" class="btn btn-default" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product_id; ?>');"><i class="fa fa-exchange"></i></button> -->
           </div>
-          <h1><?php echo $heading_title; ?></h1>
+          <h1 class="desc-title"><?php echo $heading_title; ?></h1>
           <ul class="list-unstyled">
             <?php if ($manufacturer) { ?>
             <li><?php echo $text_manufacturer; ?> <a href="<?php echo $manufacturers; ?>"><?php echo $manufacturer; ?></a></li>
             <?php } ?>
-            <li><?php echo $text_model; ?> <?php echo $model; ?></li>
+            <li class="desc-row"><span class="list-first-1"><?php echo $text_model; ?> </span> <?php echo $model; ?></li>
             <?php if ($reward) { ?>
             <li><?php echo $text_reward; ?> <?php echo $reward; ?></li>
             <?php } ?>
-            <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
+            <li class="desc-row"><span class="list-first-2"><?php echo $text_stock; ?> </span> <?php echo $stock; ?></li>
           </ul>
           <?php if ($price) { ?>
           <ul class="list-unstyled">
             <?php if (!$special) { ?>
             <li>
-              <h2><?php echo $price; ?></h2>
+              <h2 class="desc-row"><span class="list-first-3">Цена: </span><?php echo $price; ?></h2>
             </li>
             <?php } else { ?>
         <!--    <li><span style="text-decoration: line-through;"><?php echo $price; ?></span></li> -->
-            <li><span><?php echo $price; ?></span></li>
+            <li><span class="desc-row"><span class="list-first-3">Цена: </span><?php echo $price; ?></span></li>
             <li>
            <!--   <h2><?php echo $special; ?></h2> -->
             </li>
@@ -310,13 +310,14 @@
               <div class="help-block" id="recurring-description"></div>
             </div>
             <?php } ?>
-            <div class="form-group">
-              <label class="control-label" for="input-quantity"><?php echo $entry_qty; ?></label>
-              <input type="text" name="quantity" value="<?php echo $minimum; ?>" size="2" id="input-quantity" class="form-control" />
+            <div class="form-group desc-row">
+              <label class="control-label desc-quantity" for="input-quantity"><?php echo $entry_qty; ?></label>
+              <input type="text" name="quantity" value="<?php echo $minimum; ?>" size="2" id="input-quantity" class="form-control desc-input" />
               <input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
               <br />
           <!--    <button type="button" id="button-cart" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-primary btn-lg btn-block"><?php echo $button_cart; ?></button> -->
               <button type="button" id="button-cart" data-loading-text="<?php echo $text_loading; ?>" class="button button-dark"><?php echo $button_cart; ?></button>
+            <p id="added-basket">добавлено в корзину</p>
             </div>
             <?php if ($minimum > 1) { ?>
             <div class="alert alert-info"><i class="fa fa-info-circle"></i> <?php echo $text_minimum; ?></div>
@@ -479,7 +480,9 @@ $('#button-cart').on('click', function() {
 
 				$('#cart > button').html('<i class="fa fa-shopping-cart"></i> ' + json['total']);
 
-		/*	$('html, body').animate({ scrollTop: 0 }, 'slow'); */
+                $('html, body').animate({ scrollTop: 0 }, 'slow'); 
+            
+                $('#added-basket').fadeIn(300).delay(1500).fadeOut(300);
 
 				$('#cart > ul').load('index.php?route=common/cart/info ul li');
 			}
@@ -618,10 +621,10 @@ $(document).ready(function() {
 				<div class="m-footer-contacts m-footer-contacts-dark">
 					<p class="social">Мы в соц сетях</p>
 					<div class="social-block clearfix">
-						<a href="#" class="inst">instagram</a>
-						<a href="#" class="twit">twitter</a>
-						<a href="#" class="fb">facebook</a>
-						<a href="#" class="vk">vkontakte</a>
+						<a href="https://www.instagram.com/kapriz_flowers/" class="inst" target="_blank">instagram</a>
+						<!--<a href="#" class="twit">twitter</a>-->
+						<a href="https://www.facebook.com/pages/%D0%91%D1%83%D1%82%D0%B8%D0%BA-%D0%A6%D0%B2%D0%B5%D1%82%D0%BE%D0%B2-kapriz/999459183428910" class="fb" target="_blank">facebook</a>
+						<!--<a href="#" class="vk">vkontakte</a>-->
 					</div>
 					<h6>Контакты</h6>
 					<p class="adr">г.Астана, ул. Б.Момышулы,<br>

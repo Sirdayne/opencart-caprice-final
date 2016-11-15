@@ -135,9 +135,20 @@
                   <br />
                   <span class="label label-info"><?php echo $text_recurring_item; ?></span> <small><?php echo $product['recurring']; ?></small>
                   <?php } ?>
-                  <p><?php echo $product['price']; ?></p>
-                  <p>x  <?php echo $product['quantity']; ?></p>
-                  <span class="price"><?php echo $product['total']; ?></span>
+                  <p class="bask-price"><?php echo $product['price']; ?></p>
+                  
+                  <div class="bask-quantity"> 
+                   
+                    <p>кол-во</p>
+                    <input type="text" name="quantity[<?php echo $product['cart_id']; ?>]" value="<?php echo $product['quantity']; ?>" size="1" class="form-control input-korzina" />
+                    <button type="submit" data-toggle="tooltip" title="<?php echo $button_update; ?>" class="btn-korzina"></button>
+                    
+                  </div>
+                  
+                <div class="bask-total">
+                    <span>итого</span>
+                    <span class="price"><?php echo $product['total']; ?></span>
+                </div> 
               <!--    </td>-->
                    </div>
             <!--    <td class="text-left"><?php echo $product['model']; ?></td> 
@@ -194,7 +205,7 @@
         <div class="pull-right"><a href="<?php echo $checkout; ?>" class="btn btn-primary"><?php echo $button_checkout; ?></a></div>
            became this for Назад Купить -->
       <!--     <div class="pull-left"><a href="<?php echo $continue; ?>" class="btn btn-default"><?php echo $button_shopping; ?></a></div>-->
-               <div class="pull-right"><a href="<?php echo $checkout; ?>" class="button button-dark"><?php echo $button_checkout; ?></a></div> 
+               <div class="pull-right" id="cart-pull-right"><a href="<?php echo $checkout; ?>" class="button button-dark">Оплатить</a></div> 
       <!--  <div class="pull-right"><div class="button button-dark md-trigger" data-modal="modal-1"><?php echo $button_checkout; ?></div></div>-->
       </div>
       <?php echo $content_bottom; ?></div>
@@ -205,14 +216,13 @@
   <section class="how-find how-find-dark">
 			
 			<div class="find-wrapper clearfix">
-				
 				<div class="m-footer-contacts m-footer-contacts-dark">
 					<p class="social">Мы в соц сетях</p>
 					<div class="social-block clearfix">
-						<a href="#" class="inst">instagram</a>
-						<a href="#" class="twit">twitter</a>
-						<a href="#" class="fb">facebook</a>
-						<a href="#" class="vk">vkontakte</a>
+						<a href="https://www.instagram.com/kapriz_flowers/" class="inst" target="_blank">instagram</a>
+						<!--<a href="#" class="twit">twitter</a>-->
+						<a href="https://www.facebook.com/pages/%D0%91%D1%83%D1%82%D0%B8%D0%BA-%D0%A6%D0%B2%D0%B5%D1%82%D0%BE%D0%B2-kapriz/999459183428910" class="fb" target="_blank">facebook</a>
+						<!--<a href="#" class="vk">vkontakte</a>-->
 					</div>
 					<h6>Контакты</h6>
 					<p class="adr">г.Астана, ул. Б.Момышулы,<br>
@@ -225,7 +235,7 @@
 			<div class="trepet trepet-dark">
 				<span>Разработано <br>с особым трепетом <a href=""><img src="catalog/view/theme/default/img/mini-logo-gi.png" alt=""><img src="catalog/view/theme/default/img/mini-logo-gi-dark.png" alt=""></a></span>
 			</div>
-		</section>
+    </section>
 
 <div class="md-overlay"></div>
     <script src="catalog/view/theme/default/js/classie.js"></script>

@@ -1,5 +1,5 @@
-<div class="row">
-  <div class="col-sm-6">
+<div class="row row-edit">
+  <div class="col-sm-12">
     <fieldset id="account">
       <!--<legend><?php echo $text_your_details; ?></legend>-->
       <div class="form-group" style="display: <?php echo (count($customer_groups) > 1 ? 'block' : 'none'); ?>;">
@@ -36,7 +36,7 @@
       </div>
       <div class="form-group required">
         <label class="control-label" for="input-payment-telephone"><?php echo $entry_telephone; ?></label>
-        <input type="text" name="telephone" value="<?php echo $telephone; ?>" placeholder="<?php echo $entry_telephone; ?>" id="input-payment-telephone" class="form-control" />
+        <input type="text" id="client-tel-for-consult" name="telephone" value="<?php echo $telephone; ?>" placeholder="<?php echo $entry_telephone; ?>" id="input-payment-telephone" class="form-control" />
       </div>
       <div class="form-group" style="display:none;">
         <label class="control-label" for="input-payment-fax"><?php echo $entry_fax; ?></label>
@@ -110,7 +110,9 @@
       <?php if ($custom_field['type'] == 'textarea') { ?>
       <div id="payment-custom-field<?php echo $custom_field['custom_field_id']; ?>" class="form-group custom-field" data-sort="<?php echo $custom_field['sort_order']; ?>">
         <label class="control-label" for="input-payment-custom-field<?php echo $custom_field['custom_field_id']; ?>"><?php echo $custom_field['name']; ?></label>
-        <textarea name="custom_field[<?php echo $custom_field['location']; ?>][<?php echo $custom_field['custom_field_id']; ?>]" rows="5" placeholder="<?php echo $custom_field['name']; ?>" id="input-payment-custom-field<?php echo $custom_field['custom_field_id']; ?>" class="form-control"><?php echo (isset($guest_custom_field[$custom_field['custom_field_id']]) ? $guest_custom_field[$custom_field['custom_field_id']] : $custom_field['value']); ?></textarea>
+        
+        <textarea name="custom_field[<?php echo $custom_field['location']; ?>][<?php echo $custom_field['custom_field_id']; ?>]" rows="5" placeholder="<?php echo $custom_field['name']; ?>" id="input-payment-custom-field<?php echo $custom_field['custom_field_id']; ?>"  class="form-control"><?php echo (isset($guest_custom_field[$custom_field['custom_field_id']]) ? $guest_custom_field[$custom_field['custom_field_id']] : $custom_field['value']); ?></textarea>
+
       </div>
       <?php } ?>
       <?php if ($custom_field['type'] == 'file') { ?>
@@ -156,7 +158,7 @@
     </fieldset>
   </div>
  
-  <div class="col-sm-6">
+  <div class="col-sm-12">
     <fieldset id="address">
       <!--<legend><?php echo $text_your_address; ?></legend>-->
       <div class="form-group" style="display:none;">
@@ -286,6 +288,7 @@
       <?php if ($custom_field['type'] == 'textarea') { ?>
       <div id="payment-custom-field<?php echo $custom_field['custom_field_id']; ?>" class="form-group custom-field" data-sort="<?php echo $custom_field['sort_order']; ?>">
         <label class="control-label" for="input-payment-custom-field<?php echo $custom_field['custom_field_id']; ?>"><?php echo $custom_field['name']; ?></label>
+        
         <textarea name="custom_field[<?php echo $custom_field['location']; ?>][<?php echo $custom_field['custom_field_id']; ?>]" rows="5" placeholder="<?php echo $custom_field['name']; ?>" id="input-payment-custom-field<?php echo $custom_field['custom_field_id']; ?>" class="form-control"><?php echo (isset($guest_custom_field[$custom_field['custom_field_id']]) ? $guest_custom_field[$custom_field['custom_field_id']] : $custom_field['value']); ?></textarea>
       </div>
       <?php } ?>
@@ -528,3 +531,9 @@ $('#collapse-payment-address select[name=\'country_id\']').on('change', function
 
 $('#collapse-payment-address select[name=\'country_id\']').trigger('change');
 //--></script>
+
+<script src="catalog/view/theme/default/js/maskedinput.js"></script>
+	
+<script type="text/javascript">
+    jQuery(function($){$("#client-tel-for-consult").mask("+7(999)999-99-99");});
+</script>

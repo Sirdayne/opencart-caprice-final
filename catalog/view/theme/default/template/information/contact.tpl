@@ -160,10 +160,10 @@
                 <div class="adr-box">
                     <span>Мы в соц сетях</span>
                     <div class="social-contacts">
-                        <a href="#" class="inst">instagram</a>
-                        <!--<a href="#" class="twit">twitter</a>-->
-                        <a href="#" class="fb">facebook</a>
-                        <!--<a href="#" class="vk">vkontakte</a>-->
+                        <a href="https://www.instagram.com/kapriz_flowers/" class="inst" target="_blank">instagram</a>
+						<!--<a href="#" class="twit">twitter</a>-->
+						<a href="https://www.facebook.com/pages/%D0%91%D1%83%D1%82%D0%B8%D0%BA-%D0%A6%D0%B2%D0%B5%D1%82%D0%BE%D0%B2-kapriz/999459183428910" class="fb" target="_blank">facebook</a>
+						<!--<a href="#" class="vk">vkontakte</a>-->
                     </div>
                 </div>
             </div>
@@ -232,10 +232,10 @@
 			<div class="m-footer-contacts m-footer-contacts-dark">
 				<p class="social">Мы в соц сетях</p>
 				<div class="social-block clearfix">
-					<a href="#" class="inst">instagram</a>
-					<!--<a href="#" class="twit">twitter</a>-->
-					<a href="#" class="fb">facebook</a>
-					<!--<a href="#" class="vk">vkontakte</a>-->
+					<a href="https://www.instagram.com/kapriz_flowers/" class="inst" target="_blank">instagram</a>
+                    <!--<a href="#" class="twit">twitter</a>-->
+                    <a href="https://www.facebook.com/pages/%D0%91%D1%83%D1%82%D0%B8%D0%BA-%D0%A6%D0%B2%D0%B5%D1%82%D0%BE%D0%B2-kapriz/999459183428910" class="fb" target="_blank">facebook</a>
+                    <!--<a href="#" class="vk">vkontakte</a>-->
 				</div>
 				<h6>Контакты</h6>
 				<p class="adr">г.Астана, ул. Б.Момышулы,<br>

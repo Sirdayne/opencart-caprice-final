@@ -42,6 +42,18 @@
       <!-- PARALLAX EFFECT CHECKS STARTS CONDITIONS ПАРАЛЛАКС ЗАПУСК УСЛОВИЯ -->
        <script type="text/javascript">
     	$(function () {
+            
+             $('.m-js').click(function() {
+                $('.m-box').slideToggle('fast');
+                $(this).toggleClass('m-active');
+            });
+
+            $('.m-burger').click(function() {
+                $('.b-menu').fadeToggle('fast');
+                $(this).toggleClass('m-active');
+            });
+
+            
 			if ($(window).width() > 991) {
 				(function ($) {
 					var s = skrollr.init({
@@ -69,6 +81,48 @@
 				}
 			});
 		});
+    </script>
+    
+     <script>
+        
+        $(document).ready(function () {
+        
+        function changeCartNumber() {
+            
+                var cartText = $('#cart-total').text();
+                var cartNumber = '';
+                var counterText = 0;
+
+                    for (var i = 0; i < cartText.length; i++){
+
+
+                        if (cartText[i] == ')'){
+                            counterText = 0;
+                        }
+
+                        if (counterText == 1){
+                            cartNumber = cartNumber + cartText[i];    
+                        }
+
+                        if (cartText[i] == '('){
+                            counterText = 1;
+                        }
+
+
+                    }
+
+                $('#m-number').text(cartNumber);
+        }
+
+        window.setInterval(function(){
+            
+            changeCartNumber();
+            
+            
+        }, 300);
+            
+        });
+        
     </script>
 
 <?php foreach ($styles as $style) { ?>
@@ -100,6 +154,7 @@
 					<li><a href="index.php?route=common/photosession">Фотосессия</a></li>
 					<li><a href="index.php?route=common/datesdecoration">Оформление свиданий</a></li>
 					<li><a href="index.php?route=common/eventdecoration">Оформление мероприятий</a></li>
+					<li><a href="index.php?route=common/newdecoration">Новогоднее оформление</a></li>
 				</ul>
 			</li>
 			<li><a href="index.php?route=product/category&path=59">Букеты</a></li>
@@ -140,12 +195,13 @@
 					<ul>
 						<li><a href="index.php?route=common/about" id="navact-1">О компании</a></li>
 						<li><a class="dropdown-arrow" id="navact-2">Услуги</a><div class="nav-hover"></div>		 
-							 <ul>
-								<li><a href="index.php?route=common/weddingdecoration">Свадебный декор</a></li>
-								<li><a href="index.php?route=common/photosession">Фотосессия</a></li>
-								<li><a href="index.php?route=common/datesdecoration">Оформление свиданий</a></li>
-								<li><a href="index.php?route=common/eventdecoration">Оформление мероприятий</a></li>
-							</ul>
+				        <ul class="nav-fd-before">
+				            <li><a href="index.php?route=common/weddingdecoration">Свадебный декор</a></li>
+				            <li><a href="index.php?route=common/photosession">Фотосессия</a></li>
+                            <li><a href="index.php?route=common/datesdecoration">Оформление свиданий</a></li>
+                            <li><a href="index.php?route=common/eventdecoration">Оформление мероприятий</a></li>
+                            <li><a href="index.php?route=common/newdecoration">Новогоднее оформление</a></li>
+				        </ul>
 						</li>
 						<li><a href="index.php?route=product/category&path=59" id="navact-3">Букеты</a></li>
 						<li><a href="index.php?route=common/delivery" id="navact-4">Доставка</a></li>
@@ -154,19 +210,54 @@
 				</nav>
 			</div>
 			<div class="content-holder-mobile">
-				<div class="m-fir-header clearfix">
+				<div class="m-fir-header clearfix-1">
+                   
+                    <div class="m-burger">
+                        <div class="m-b-1"></div>
+                        <div class="m-b-2"></div>
+                        <div class="m-b-3"></div>
+                        
+                        
+                    </div>
+                    
+                    <div class="b-menu">
+                            <a href="index.php?route=common/about"><div class="b-box">О компании</div></a>
+                            <div class="b-box m-js">
+                                Услуги
+                                <div class="burger-open"></div>
+                            </div>
+
+                            <a href="index.php?route=common/weddingdecoration"><div class="m-box">Свадебный декор</div></a>
+                            <a href="index.php?route=common/photosession"><div class="m-box">Фотосессия</div></a>
+                            <a href="index.php?route=common/datesdecoration"><div class="m-box">Оформление свиданий</div></a>
+                            <a href="index.php?route=common/eventdecoration"><div class="m-box">Оформление мероприятий</div></a>
+                            <a href="index.php?route=common/newdecoration"><div class="m-box">Новогоднее оформление</div></a>
+
+                            <a href="index.php?route=product/category&path=59"><div class="b-box">Букеты</div></a>
+                            <a href="index.php?route=common/delivery"><div class="b-box">Доставка</div></a>
+                            <a href="index.php?route=information/contact"><div class="b-box">Контакты</div></a>
+                        
+                    </div>
+                   
+                    <a href="index.php?route=checkout/cart" class="m-basket m-basket-white">
+						  <div class="m-number m-number-white"><p id="m-number"><?php echo $cart_total; ?></p></div>
+				    </a>
+                    
+                   
                     <a href="index.php">
-					    <div class="m-logo-top m-logo-top-dark m-logo-top-white">
-					        <!--<img src="catalog/view/theme/default/img/logo-kapriz-dark.png" alt="">-->
-					    </div>
+                        <div class="m-logo-wrapper">
+                            <div class="m-logo-top m-logo-top-dark m-logo-top-white">
+                                <!--<img src="catalog/view/theme/default/img/logo-kapriz-dark.png" alt="">-->
+                            </div>
+                        </div>
                     </a>
 					<div class="m-rbox">
-						<a href="index.php?route=checkout/cart" class="m-basket m-basket-white"></a>
-						<a href="index.php?route=product/category&path=59" class="button button-dark button-bas-white">подобрать букет</a>
-						<div class="clearfix">
+						
+						<!--<a href="index.php?route=product/category&path=59" class="button button-dark button-bas-white">подобрать букет</a>-->
+						<div class="clearfix-1" id="top_tel">
 							<div id="toptel" class="m-toptel m-toptel-dark m-toptel-white">
 								<a href="tel:+77719115050">+7(771)9115050</a>
-								<a href="tel:+77172265050">+7(7172)265050</a>
+								<!--<a href="tel:+77172265050">+7(7172)265050</a>-->
 							</div>
 						</div>
 					</div>
